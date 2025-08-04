@@ -1,0 +1,113 @@
+meta:
+  title: "Abhijeet Bhowmick"
+  subtitle: "Manager – Data Platforms | Data Engineering & GenAI Strategy"
+  email: "bhowmick2021@gmail.com"
+  linkedin: "https://linkedin.com/in/abhijeetbhowmick"
+
+sections:
+  - id: about
+    title: "About Me"
+    content: |
+      Strategic Data & BI Leader with 15+ years of experience delivering scalable analytics platforms, cloud-native architectures, and enterprise transformation across global industries.
+      Expertise in GCP, BigQuery, Tableau, Power BI, SQL, Python, and practical LLM integration to automate workflows and enhance decision intelligence.
+
+  - id: skills
+    title: "Skills"
+    items:
+      - "GCP · BigQuery · SQL · Tableau"
+      - "LLM & Prompt Engineering"
+      - "Data Governance & Cloud Migration"
+      - "BI Automation · Python · Agile Leadership"
+      - "PHP · Shell Scripting · Trello · Smartsheet"
+      - "Linux/Unix · MS Excel · Google Sheets"
+
+  - id: experience
+    title: "Experience"
+    jobs:
+      - company: "RADIX"
+        role: "Manager – Business Intelligence"
+        period: "Jul 2022 – Present"
+        highlights:
+          - "Defined enterprise BI strategy and delivered scalable GCP platforms"
+          - "Optimized Tableau & BigQuery, reducing costs by 20%"
+          - "Grew BI adoption by 50% through enablement programs"
+
+      - company: "RADIX"
+        role: "Sr. Lead – Business Intelligence"
+        period: "Jun 2020 – Jun 2022"
+        highlights:
+          - "Migrated infrastructure to GCP, reducing costs by 30%"
+          - "Streamlined workflows and boosted forecasting accuracy"
+
+      - company: "RADIX"
+        role: "Sr. Team Lead – BI Application Development"
+        period: "Oct 2017 – Jun 2020"
+        highlights:
+          - "Led full-cycle development of internal web apps for operational workflows"
+          - "Integrated BI with application analytics to inform product priorities"
+          - "Automated backend workflows to improve delivery timelines by 25%"
+
+      - company: "RADIX"
+        role: "BI Lead Analyst"
+        period: "May 2015 – Oct 2016"
+        highlights:
+          - "Introduced centralized reporting standards for accuracy"
+          - "Transitioned static reports to dynamic dashboards"
+          - "Mentored junior analysts and aligned BI with strategic goals"
+
+      - company: "DIRECTI GROUP"
+        role: "BI Analyst – Strategy & Reporting"
+        period: "Jan 2012 – May 2015"
+        highlights:
+          - "Built BI portals and dashboards for revenue forecasting"
+          - "Delivered real-time insights to senior leaders and client teams"
+
+      - company: "LOGICBOXES (Directi Group)"
+        role: "Business Intelligence and Development"
+        period: "Oct 2009 – Jun 2012"
+        highlights:
+          - "Built first internal analytics platform (LB360)"
+          - "Tracked revenue metrics and redesigned training interface"
+
+      - company: "LOGICBOXES"
+        role: "Business Operations Liaison"
+        period: "Apr 2009 – Jun 2010"
+        highlights:
+          - "Streamlined onboarding, data flows, and cross-departmental ops"
+
+      - company: "MPHASIS"
+        role: "Specialist – Sr Technical Associate"
+        period: "Oct 2007 – Mar 2009"
+        highlights:
+          - "Provided Tier 1/2 infrastructure support for Xerox ITO"
+          - "Resolved email, network, VPN, and mobile access issues"
+
+      - company: "MPHASIS"
+        role: "Technical Associate"
+        period: "Oct 2006 – Sep 2007"
+        highlights:
+          - "Supported Symantec customers with Norton Antivirus installs"
+          - "Resolved malware/security conflicts and improved system performance"
+
+  - id: projects
+    title: "Notable Projects"
+    items:
+      - "Redesigned BI architecture—reduced reporting cycle by 60%"
+      - "Automated stakeholder reporting using GenAI tools"
+      - "Built LB360 BI Portal during foundational phase at LogicBoxes"
+      - "Implemented self-serve data products using GCP/BigQuery"
+      - "Enabled predictive analytics for strategic forecasting"
+
+  - id: freelance
+    title: "Freelance / Contract Work"
+    description: "I’m available for short-term consulting or freelance projects in:"
+    services:
+      - "BI strategy and modernization"
+      - "Prompt engineering and GenAI integration"
+      - "Cloud data architecture and cost optimization"
+      - "LLM workflow automation"
+
+  - id: contact
+    title: "Contact"
+    content: >
+      Reach me at [bhowmick2021@gmail.com](mailto:bhowmick2021@gmail.com) or connect via [LinkedIn](https://linkedin.com/in/abhijeetbhowmick)
