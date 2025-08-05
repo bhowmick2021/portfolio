@@ -1,7 +1,6 @@
 # Abhijeet Bhowmick
 
-**Senior Manager / Associate Director – Data Engineering & Business Intelligence**
-*Driving Cloud Analytics, GCP Strategy, BI Transformation & Change Management*
+**Driving Cloud Analytics, GCP Strategy, BI Transformation & Change Management**
 
 📍 Mumbai, Maharashtra, India
 ✉️ [bhowmick2021@gmail.com](mailto:bhowmick2021@gmail.com)
