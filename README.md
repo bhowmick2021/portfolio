@@ -39,8 +39,16 @@ To contribute to India’s digital growth story by leading data transformation p
 
 **Radix (Offsite)**
 *Jun 2020 – Dec 2020 (Full Time)*<br>
-Led enterprise BI infrastructure migration to Google Cloud Platform, reducing infrastructure cost by 30% while improving performance and scalability.<br>
-**Skills:** GCP, BigQuery, Cloud Functions, Data Warehousing, SQL, Cost Optimization
+
+**Project Phases:**  
+**Assessment ➝ Planning ➝ Migration ➝ Optimization**
+
+**Summary:**  
+Led enterprise BI infrastructure migration to Google Cloud Platform, reducing infrastructure cost by 30% while improving performance and scalability.
+
+**Skills:**  
+`GCP` `BigQuery` `Cloud Functions` `Data Warehousing` `SQL` `Cost Optimization`
+
 
 ### **Enterprise BI Transformation**
 
