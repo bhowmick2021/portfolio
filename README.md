@@ -38,43 +38,43 @@ To contribute to India’s digital growth story by leading data transformation p
 ### **Cloud Migration to GCP**
 
 **Radix (Offsite)**
-*Jun 2020 – Dec 2020 (Full Time)*
-Led enterprise BI infrastructure migration to Google Cloud Platform, reducing infrastructure cost by 30% while improving performance and scalability.
+*Jun 2020 – Dec 2020 (Full Time)*<br>
+Led enterprise BI infrastructure migration to Google Cloud Platform, reducing infrastructure cost by 30% while improving performance and scalability.<br>
 **Skills:** GCP, BigQuery, Cloud Functions, Data Warehousing, SQL, Cost Optimization
 
 ### **Enterprise BI Transformation**
 
 **Radix (Offsite)**
-*Jan 2020 – Dec 2024 (Full Time)*
-Spearheaded a full-scale BI modernization initiative, reducing reporting turnaround time by 60% and improving visibility for leadership.
+*Jan 2020 – Dec 2024 (Full Time)*<br>
+Spearheaded a full-scale BI modernization initiative, reducing reporting turnaround time by 60% and improving visibility for leadership.<br>
 **Skills:** Tableau, Power BI, Data Architecture, Executive Dashboards, Agile Delivery, Change Management
 
 ### **KPI & Dashboard Frameworks**
 
 **Radix (Offsite)**
-*Jan 2020 – Dec 2021 (Full Time)*
-Partnered with CXOs to define performance metrics and launched executive dashboards aligned with strategic planning.
+*Jan 2020 – Dec 2021 (Full Time)*<br>
+Partnered with CXOs to define performance metrics and launched executive dashboards aligned with strategic planning.<br>
 **Skills:** KPI Design, Tableau, Power BI, Stakeholder Management, SQL, Data Governance
 
 ### **Analytics Automation**
 
 **Radix (Offsite)**
-*Jan 2020 – Dec 2022 (Full Time)*
-Built reusable pipelines and automated reporting workflows, significantly reducing manual efforts and improving accuracy.
+*Jan 2020 – Dec 2022 (Full Time)*<br>
+Built reusable pipelines and automated reporting workflows, significantly reducing manual efforts and improving accuracy.<br>
 **Skills:** SQL, Data Pipelines, Workflow Automation, Python (Basic), Shell Scripting, BigQuery
 
 ### **BI Application Development**
 
 **Radix (Offsite)**
-*Jan 2017 – Dec 2019 (Full Time)*
-Developed internal BI tools and automation frameworks to support data access and reporting across departments.
+*Jan 2017 – Dec 2019 (Full Time)*<br>
+Developed internal BI tools and automation frameworks to support data access and reporting across departments.<br>
 **Skills:** BI Tools, Automation Frameworks, SQL, Excel (Advanced), Git, Trello, Jira
 
 ### **Sales & Product Performance Dashboards**
 
 **Radix (Offsite)**
-*Jan 2015 – Dec 2016 (Full Time)*
-Delivered interactive dashboards to monitor international product launches and regional sales performance.
+*Jan 2015 – Dec 2016 (Full Time)*<br>
+Delivered interactive dashboards to monitor international product launches and regional sales performance.<br>
 **Skills:** Tableau, Data Visualization, SQL, Sales Analytics, Product Performance Monitoring
 
 ---
