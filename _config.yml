@@ -1,3 +1,5 @@
-# add the following to _config.yml file
-title: Abhijeet Bhowmick
-theme: jekyll-theme-minimal
+title: "Abhijeet Bhowmick — Data Manager Portfolio"
+description: "Projects, blog posts, and contact."
+theme: minima
+plugins:
+  - jekyll-seo-tag
