@@ -14,6 +14,7 @@ Over the years, I’ve:
 
 For me, data is never just numbers — it’s a living story. Each project is a new chapter, and I’m always looking for the next one to tell.
 
+
 ## 🚀 Projects
 
 A curated collection of work where data strategy meets execution — focused on high-impact enterprise initiatives.
@@ -22,10 +23,8 @@ A curated collection of work where data strategy meets execution — focused on 
 
 ### 1️⃣ Migration to BigQuery & Performance Optimization
 
-<img src="https://img.icons8.com/color/48/000000/google-bigquery.png" alt="BigQuery Migration" style="vertical-align: middle; margin-right: 8px;"/>
-
-**Role:** Project Lead<br>
-**Tech:** GCP • BigQuery • Tableau<br>
+**Role:** Project Lead
+**Tech:** GCP • BigQuery • Tableau
 **Impact:** Led the end-to-end migration of enterprise data infrastructure to **BigQuery**, reducing infrastructure costs by **30%** and improving data latency by **40%**. Implemented optimized workloads, resource monitoring, and performance tuning, saving \~\$50K annually.
 
 
@@ -33,10 +32,9 @@ A curated collection of work where data strategy meets execution — focused on 
 
 ### 2️⃣ GenAI-Powered Data Governance & Reporting Alerts
 
-<img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" alt="AI Governance" style="vertical-align: middle; margin-right: 8px;"/>
 
-**Role:** Solution Architect<br>
-**Tech:** BigQuery • Python • Prompt Engineering • LLMs<br>
+**Role:** Solution Architect
+**Tech:** BigQuery • Python • Prompt Engineering • LLMs
 **Impact:** Designed an AI-driven data governance and reporting alert system that proactively monitors data quality, flags anomalies, and generates automated insights. Reduced manual audit effort by over 40 hours per month while improving compliance and decision-making speed.
 
 
@@ -44,10 +42,9 @@ A curated collection of work where data strategy meets execution — focused on 
 
 ### 3️⃣ Enterprise BI Framework
 
-<img src="https://img.icons8.com/color/48/000000/combo-chart.png" alt="BI Framework" style="vertical-align: middle; margin-right: 8px;"/>
 
-**Role:** Data Strategy Lead<br>
-**Tech:** Tableau • BigQuery • SQL<br>
+**Role:** Data Strategy Lead
+**Tech:** Tableau • BigQuery • SQL
 **Impact:** Designed and delivered enterprise-grade data sources that became the foundation for **top leadership-focused dashboards**, enhancing executive decision-making speed and strategic insight. Improved decision cycles by **35%** and increased adoption by 50%.
 
 
@@ -55,11 +52,12 @@ A curated collection of work where data strategy meets execution — focused on 
 
 ### 4️⃣ Scalable ETL Pipeline Development
 
-<img src="https://img.icons8.com/fluency/48/000000/data-in-both-directions.png" alt="ETL Pipelines" style="vertical-align: middle; margin-right: 8px;"/>
 
-**Role:** Data Engineering Lead<br>
-**Tech:** BigQuery • Python • SQL • Cloud Composer<br>
+**Role:** Data Engineering Lead
+**Tech:** BigQuery • Python • SQL • Cloud Composer
 **Impact:** Architected and deployed automated ETL pipelines to integrate 15+ key data sources, standardize data quality, and enable near real-time reporting. Reduced manual data preparation time by **60%** and improved data consistency across the organization.
+
+
 
 
 
