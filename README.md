@@ -24,7 +24,8 @@ A curated collection of work where data strategy meets execution — focused on 
 
 **Role:** Project Lead
 **Tech:** GCP • BigQuery • Tableau
-**Impact:** Led the end-to-end migration of enterprise data infrastructure to **BigQuery**, reducing infrastructure costs by **30%** and improving data latency by **40%**. Implemented optimized workloads, resource monitoring, and performance tuning, saving \~\$50K annually.
+**Impact:**
+Led the end-to-end migration of enterprise data infrastructure to **BigQuery**, reducing infrastructure costs by **30%** and improving data latency by **40%**. Implemented optimized workloads, resource monitoring, and performance tuning, saving \~\$50K annually.
 
 ---
 
@@ -32,7 +33,8 @@ A curated collection of work where data strategy meets execution — focused on 
 
 **Role:** Solution Architect
 **Tech:** BigQuery • Python • Prompt Engineering • LLMs
-**Impact:** Designed an AI-driven data governance and reporting alert system that proactively monitors data quality, flags anomalies, and generates automated insights. Reduced manual audit effort by over 40 hours per month while improving compliance and decision-making speed.
+**Impact:**
+Designed an AI-driven data governance and reporting alert system that proactively monitors data quality, flags anomalies, and generates automated insights. Reduced manual audit effort by over 40 hours per month while improving compliance and decision-making speed.
 
 ---
 
@@ -40,7 +42,8 @@ A curated collection of work where data strategy meets execution — focused on 
 
 **Role:** Data Strategy Lead
 **Tech:** Tableau • BigQuery • SQL
-**Impact:** Designed and delivered enterprise-grade data sources that became the foundation for **top leadership-focused dashboards**, enhancing executive decision-making speed and strategic insight. Improved decision cycles by **35%** and increased adoption by 50%.
+**Impact:**
+Designed and delivered enterprise-grade data sources that became the foundation for **top leadership-focused dashboards**, enhancing executive decision-making speed and strategic insight. Improved decision cycles by **35%** and increased adoption by 50%.
 
 ---
 
@@ -48,7 +51,10 @@ A curated collection of work where data strategy meets execution — focused on 
 
 **Role:** Data Engineering Lead
 **Tech:** BigQuery • Python • SQL • Cloud Composer
-**Impact:** Architected and deployed automated ETL pipelines to integrate 15+ key data sources, standardize data quality, and enable near real-time reporting. Reduced manual data preparation time by **60%** and improved data consistency across the organization.
+**Impact:**
+Architected and deployed automated ETL pipelines to integrate 15+ key data sources, standardize data quality, and enable near real-time reporting. Reduced manual data preparation time by **60%** and improved data consistency across the organization.
+
+
 
 ---
 
