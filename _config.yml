@@ -1,3 +1,5 @@
 title: "Abhijeet Bhowmick — Data Manager Portfolio"
 description: "Personal Portfoliofor Abhijeet Bhowmick"
-theme: jekyll-theme-minimal
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-cayman
