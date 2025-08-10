@@ -1,4 +1,4 @@
-[About Me](#-about-me) | [Projects](#projects) | [Skills](#skills) | [Contact](#contact)
+[About Me](#-about-me) | [Projects](#projects) | [Skills](#skills) | [Contact](#contact) |[Download Resume](#Download My Resume)
 
 ## 👨‍💻 About Me
 
@@ -110,4 +110,21 @@ A mix of strategy, engineering, and storytelling with data.
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge\&logo=php\&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
 
+
+## 📮 Contact
+
+Let’s connect — whether it’s about data platforms, BI strategy, or exciting new collaborations.
+
+### Get in touch
+
+[![Email](https://img.icons8.com/fluency/48/000000/new-post.png)](mailto:bhowmick2021@gmail.com)  **Email:** [bhowmick2021@gmail.com](mailto:bhowmick2021@gmail.com)
+[![Phone](https://img.icons8.com/fluency/48/000000/phone.png)](tel:+918108932139)  **Phone:** [+91-8108932139](tel:+918108932139)
+[![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/abhijeetbhowmick)  **LinkedIn:** [abhijeetbhowmick](https://www.linkedin.com/in/abhijeetbhowmick)
+[![GitHub](https://img.icons8.com/ios-glyphs/48/000000/github.png)](https://github.com/bhowmick2021)  **GitHub:** [bhowmick2021](https://github.com/bhowmick2021)
+
+---
+
+### 📄 Download My Resume
+
+[![Resume](https://img.icons8.com/fluency/48/000000/resume.png)](Abhijeet_Bhowmick_Resume.pdf)  **[Click here to download my resume](Abhijeet_Bhowmick_Resume.pdf)**
 
