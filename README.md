@@ -91,10 +91,10 @@ A mix of strategy, engineering, and storytelling with data.
 Let’s connect — whether it’s about data platforms, BI strategy, or exciting new collaborations.
 
 ### Get in touch  
-[![Email](https://img.icons8.com/fluency/48/000000/new-post.png)](mailto:bhowmick2021@gmail.com) **Email:** [bhowmick2021@gmail.com](mailto:bhowmick2021@gmail.com)  
-[![Phone](https://img.icons8.com/fluency/48/000000/phone.png)](tel:+918108932139) **Phone:** [+91-8108932139](tel:+918108932139)  
-[![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/abhijeetbhowmick) **LinkedIn:** [abhijeetbhowmick](https://www.linkedin.com/in/abhijeetbhowmick)  
-[![GitHub](https://img.icons8.com/ios-glyphs/48/000000/github.png)](https://github.com/bhowmick2021) **GitHub:** [bhowmick2021](https://github.com/bhowmick2021)  
+[![Email](https://img.icons8.com/fluency/24/000000/new-post.png)](mailto:bhowmick2021@gmail.com) **Email:** [bhowmick2021@gmail.com](mailto:bhowmick2021@gmail.com)  
+[![Phone](https://img.icons8.com/fluency/24/000000/phone.png)](tel:+918108932139) **Phone:** [+91-8108932139](tel:+918108932139)  
+[![LinkedIn](https://img.icons8.com/color/24/000000/linkedin.png)](https://www.linkedin.com/in/abhijeetbhowmick) **LinkedIn:** [abhijeetbhowmick](https://www.linkedin.com/in/abhijeetbhowmick)  
+[![GitHub](https://img.icons8.com/ios-glyphs/24/000000/github.png)](https://github.com/bhowmick2021) **GitHub:** [bhowmick2021](https://github.com/bhowmick2021)  
 
 ---
 <a id="download-my-resume"></a>
