@@ -1,5 +1,3 @@
 title: "Abhijeet Bhowmick — Data Manager Portfolio"
-description: "Projects, blog posts, and contact."
-theme: minimal
-plugins:
-  - jekyll-seo-tag
+description: "Personal Portfoliofor Abhijeet Bhowmick"
+theme: jekyll-theme-minimal
