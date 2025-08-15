@@ -62,7 +62,7 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 🧩 **Pandalytics**
 
-* **Vendor Type:** Custom API
+* **About the Vendor:** Data analytics platform offering business intelligence APIs.
 * **Tools Used:** Cloud Functions, BigQuery
 * **Outcome:** Integrated nested JSON data into GCP and BigQuery, enabling analytics-ready dashboards.
 
@@ -70,7 +70,7 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 🌐 **Similarweb**
 
-* **Vendor Type:** Web Scraping
+* **About the Vendor:** Market intelligence platform offering traffic and engagement insights.
 * **Tools Used:** Python, BigQuery, Cloud Scheduler
 * **Outcome:** Automated cohort generation and dashboard updates on a weekly cadence.
 
@@ -78,7 +78,7 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 🗂️ **DataProvider**
 
-* **Vendor Type:** Snapshot Provider
+* **About the Vendor:** Global web data provider delivering structured business intelligence datasets.
 * **Tools Used:** Cloud Storage, BigQuery Views
 * **Outcome:** Merged monthly snapshots into dynamic views for seamless dashboard integration.
 
@@ -86,7 +86,7 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 📑 **Abuse & Compliance**
 
-* **Vendor Type:** Third-Party Audit Data
+* **About the Vendor:** Third-party security and audit service for digital compliance reporting.
 * **Tools Used:** Cloud Functions, BigQuery
 * **Outcome:** Created compliance-ready reference datasets with document proofing capabilities.
 
@@ -94,7 +94,7 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 🌐 **DNSLookup**
 
-* **Vendor Type:** DNS Logs
+* **About the Vendor:** DNS intelligence service offering real-time and historical DNS datasets.
 * **Tools Used:** Cloud Storage, BigQuery
 * **Outcome:** Stored and optimized DNS data for scalable, big data consumption.
 
@@ -102,7 +102,7 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 🔍 **Namify**
 
-* **Vendor Type:** Domain Tool Backend
+* **About the Vendor:** AI-powered domain name generator and branding platform.
 * **Tools Used:** BigQuery, Cloud Functions
 * **Outcome:** Powered real-time domain name recommendations for Namify’s platform.
 
@@ -110,14 +110,13 @@ The following projects showcase the kind of high-impact, end-to-end vendor data 
 
 ### 🌐 **ICANN Zone Data**
 
-* **Vendor Type:** Regulatory Dataset
+* **About the Vendor:** Public registry of top-level domain zone files managed by ICANN.
 * **Tools Used:** Cloud Scheduler, Workflows, BigQuery
 * **Outcome:** Automated daily ingestion of ICANN zone files for monitoring and reporting.
 
 ---
 
 🚀 These projects reflect my ability to handle multi-vendor, multi-format data pipelines with automation, scale, and business impact in mind—making me a valuable asset for dynamic, project-based environments across industries.
-
 
 ---
 <a id="skills"></a>
