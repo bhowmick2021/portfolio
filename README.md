@@ -16,7 +16,7 @@ For me, data is never just numbers — it’s a living story. Each project is a 
 
 ---
 <a id="projects"></a>
-## 🚀 Projects (Radix Internal)
+## 🚀 Projects (Radix Internal · 2–3 Month Turnaround)
 
 A curated collection of work where data strategy meets execution — focused on high-impact enterprise initiatives.
 
@@ -54,9 +54,9 @@ Architected and deployed automated ETL pipelines to integrate 15+ key data sourc
 
 ---
 <a id="vendor-integration"></a>
-## 🔌 Vendor Integration Projects with GCP & BigQuery
+## 🔌 Fast-Turnaround Vendor Integration Projects with GCP & BigQuery
 
-The following projects showcase the kind of high-impact, end-to-end vendor data integrations I can deliver—ideal for teams seeking flexible support for ongoing or short-term analytics needs using Google Cloud Platform (GCP).
+These quick-execution projects (most delivered in just 10–15 days) showcase the kind of high-impact, end-to-end vendor data integrations I can deliver—ideal for teams seeking flexible, short-term analytics expertise using Google Cloud Platform (GCP).
 
 ---
 
