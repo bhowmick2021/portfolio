@@ -1,4 +1,4 @@
-[About Me](#about-me) | [Projects](#projects) | [Skills](#skills) | [Contact](#contact) | [Download Resume](#download-my-resume)
+[About Me](#about-me) | [Projects](#projects) |[Vendor Integration](#vendor-integration) | [Skills](#skills) | [Contact](#contact) | [Download Resume](#download-my-resume)
 
 <a id="about-me"></a>
 ## 👨‍💻 About Me
@@ -16,7 +16,7 @@ For me, data is never just numbers — it’s a living story. Each project is a 
 
 ---
 <a id="projects"></a>
-## 🚀 Projects
+## 🚀 Projects (Radix Internal)
 
 A curated collection of work where data strategy meets execution — focused on high-impact enterprise initiatives.
 
@@ -51,6 +51,73 @@ Designed and delivered enterprise-grade data sources that became the foundation 
 **Tech:** BigQuery • Python • SQL • Cloud Composer  
 **Impact:**  
 Architected and deployed automated ETL pipelines to integrate 15+ key data sources, standardize data quality, and enable near real-time reporting. Reduced manual data preparation time by **60%** and improved data consistency across the organization.
+
+---
+<a id="vendor-integration"></a>
+## 🔌 Vendor Integration Projects with GCP & BigQuery
+
+The following projects showcase the kind of high-impact, end-to-end vendor data integrations I can deliver—ideal for teams seeking flexible support for ongoing or short-term analytics needs using Google Cloud Platform (GCP).
+
+---
+
+### 🧩 **Pandalytics**
+
+* **Vendor Type:** Custom API
+* **Tools Used:** Cloud Functions, BigQuery
+* **Outcome:** Integrated nested JSON data into GCP and BigQuery, enabling analytics-ready dashboards.
+
+---
+
+### 🌐 **Similarweb**
+
+* **Vendor Type:** Web Scraping
+* **Tools Used:** Python, BigQuery, Cloud Scheduler
+* **Outcome:** Automated cohort generation and dashboard updates on a weekly cadence.
+
+---
+
+### 🗂️ **DataProvider**
+
+* **Vendor Type:** Snapshot Provider
+* **Tools Used:** Cloud Storage, BigQuery Views
+* **Outcome:** Merged monthly snapshots into dynamic views for seamless dashboard integration.
+
+---
+
+### 📑 **Abuse & Compliance**
+
+* **Vendor Type:** Third-Party Audit Data
+* **Tools Used:** Cloud Functions, BigQuery
+* **Outcome:** Created compliance-ready reference datasets with document proofing capabilities.
+
+---
+
+### 🌐 **DNSLookup**
+
+* **Vendor Type:** DNS Logs
+* **Tools Used:** Cloud Storage, BigQuery
+* **Outcome:** Stored and optimized DNS data for scalable, big data consumption.
+
+---
+
+### 🔍 **Namify**
+
+* **Vendor Type:** Domain Tool Backend
+* **Tools Used:** BigQuery, Cloud Functions
+* **Outcome:** Powered real-time domain name recommendations for Namify’s platform.
+
+---
+
+### 🌐 **ICANN Zone Data**
+
+* **Vendor Type:** Regulatory Dataset
+* **Tools Used:** Cloud Scheduler, Workflows, BigQuery
+* **Outcome:** Automated daily ingestion of ICANN zone files for monitoring and reporting.
+
+---
+
+🚀 These projects reflect my ability to handle multi-vendor, multi-format data pipelines with automation, scale, and business impact in mind—making me a valuable asset for dynamic, project-based environments across industries.
+
 
 ---
 <a id="skills"></a>
