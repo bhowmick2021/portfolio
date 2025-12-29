@@ -21,9 +21,9 @@ Legacy warehouse + mixed patterns led to slow delivery and unpredictable query c
 - Set governance patterns so the savings stayed
 
 ### Outcomes
-- ⏱️ ETL processing improved (reported up to **80%** faster in critical paths) :contentReference[oaicite:6]{index=6}  
-- 💸 Reduced query/storage cost via optimization patterns (reported **~30–40%** on heavy workloads) :contentReference[oaicite:7]{index=7}  
-- 🧭 Established ongoing cost controls and monitoring :contentReference[oaicite:8]{index=8}
+- ⏱️ ETL processing improved (reported up to **80%** faster in critical paths)
+- 💸 Reduced query/storage cost via optimization patterns (reported **~30–40%** on heavy workloads)
+- 🧭 Established ongoing cost controls and monitoring
 
 ---
 
@@ -59,8 +59,8 @@ Central BI teams were overloaded with recurring questions and custom extracts.
 - Created repeatable onboarding so teams could self-serve
 
 ### Outcomes
-- 🙅 Reduced ad-hoc requests (reported ~**50%** in rollout areas) :contentReference[oaicite:9]{index=9}  
-- ⚡ Faster insight turnaround and higher adoption :contentReference[oaicite:10]{index=10}  
+- 🙅 Reduced ad-hoc requests (reported ~**50%** in rollout areas) 
+- ⚡ Faster insight turnaround and higher adoption :contentReference
 
 ---
 
@@ -93,9 +93,65 @@ Stakeholders needed a daily signal without manual curation.
 - Owned orchestration + scheduling + delivery pipeline
 
 ### Outcomes
-- 🧠 Reduced manual curation effort (reported ~**90%**) :contentReference[oaicite:11]{index=11}  
+- 🧠 Reduced manual curation effort (reported ~**90%**)
 
 ---
 
 ### Fast-turnaround vendor integrations (10–15 day builds)
-When the need is “get this data usable fast”: multi-format ingestion, automation, and stable datasets. :contentReference[oaicite:12]{index=12}
+When the need is “get this data usable fast”: multi-format ingestion, automation, and stable datasets.
+
+---
+
+### 🧩 **Pandalytics**
+
+* **About the Vendor:** Data analytics platform offering business intelligence APIs.
+* **Tools Used:** Cloud Functions, BigQuery
+* **Outcome:** Integrated nested JSON data into GCP and BigQuery, enabling analytics-ready dashboards.
+
+---
+
+### 🌐 **Similarweb**
+
+* **About the Vendor:** Market intelligence platform offering traffic and engagement insights.
+* **Tools Used:** Python, BigQuery, Cloud Scheduler
+* **Outcome:** Automated cohort generation and dashboard updates on a weekly cadence.
+
+---
+
+### 🗂️ **DataProvider**
+
+* **About the Vendor:** Global web data provider delivering structured business intelligence datasets.
+* **Tools Used:** Cloud Storage, BigQuery Views
+* **Outcome:** Merged monthly snapshots into dynamic views for seamless dashboard integration.
+
+---
+
+### 📑 **Abuse & Compliance**
+
+* **About the Vendor:** Third-party security and audit service for digital compliance reporting.
+* **Tools Used:** Cloud Functions, BigQuery
+* **Outcome:** Created compliance-ready reference datasets with document proofing capabilities.
+
+---
+
+### 🌐 **DNSLookup**
+
+* **About the Vendor:** DNS intelligence service offering real-time and historical DNS datasets.
+* **Tools Used:** Cloud Storage, BigQuery
+* **Outcome:** Stored and optimized DNS data for scalable, big data consumption.
+
+---
+
+### 🔍 **Namify**
+
+* **About the Vendor:** AI-powered domain name generator and branding platform.
+* **Tools Used:** BigQuery, Cloud Functions
+* **Outcome:** Powered real-time domain name recommendations for Namify’s platform.
+
+---
+
+### 🌐 **ICANN Zone Data**
+
+* **About the Vendor:** Public registry of top-level domain zone files managed by ICANN.
+* **Tools Used:** Cloud Scheduler, Workflows, BigQuery
+* **Outcome:** Automated daily ingestion of ICANN zone files for monitoring and reporting.
