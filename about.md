@@ -1,4 +1,4 @@
-# About
+# 👋 About
 
 I’ve spent over 15 years working across analytics, BI platforms, and data engineering—long enough to see what scales, what breaks, and what quietly becomes expensive.
 
@@ -33,7 +33,7 @@ I help teams make better decisions about the ones they already have.
 - Experience spanning on-prem systems, GCP, BigQuery, and Tableau  
 - Worked with global teams across India, APAC, and Europe
 
-## Engagement Model
+## 🧩 Engagement Model
 
 I usually work in one of these ways:
 

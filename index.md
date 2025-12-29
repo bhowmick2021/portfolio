@@ -1,5 +1,3 @@
-# Abhijeet Bhowmick
-
 ### Analytics Platforms • BigQuery FinOps • BI Governance
 
 I help teams fix analytics platforms that have grown expensive, fragile, or hard to trust.
@@ -10,7 +8,8 @@ This site is a working record of how I think, what I’ve solved, and how I typi
 
 ---
 
-## What I Help With
+## 🧭 What I Help With
+
 
 - BigQuery cost optimization and FinOps guardrails  
 - Analytics platform modernization and technical debt reduction  
@@ -21,7 +20,7 @@ If your analytics stack technically works but feels risky, expensive, or slow to
 
 ---
 
-## Start Here
+## ▶️ Start Here
 
 Most conversations begin with a short review or audit.
 
@@ -33,6 +32,8 @@ If you want a second set of eyes on:
 - Governance, reliability, or adoption issues  
 
 you can reach me here:
+
+If you’re unsure whether a short review would help, that’s usually a good place to start.
 
 📩 **bhowmick2021@gmail.com**  
 🔗 **linkedin.com/in/abhijeetbhowmick**

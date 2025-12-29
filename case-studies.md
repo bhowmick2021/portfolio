@@ -1,4 +1,4 @@
-# Case Studies
+# 📂 Case Studies
 
 These are not product launches or demo projects.  
 They are real platform problems solved over time.
