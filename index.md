@@ -1,44 +1,46 @@
-### Analytics Platforms • BigQuery FinOps • BI Governance
+---
+title: Home
+---
 
-I help teams fix analytics platforms that have grown expensive, fragile, or hard to trust.
+# Abhijeet Bhowmick  
+**Data Platforms • BigQuery FinOps • BI Governance • Automation (n8n + LLMs)**
 
-Most of my work sits at the intersection of **data engineering, BI platforms, and cost governance**. I’ve spent 15+ years building and running analytics systems—from early internal reporting portals to large-scale cloud platforms on BigQuery and Tableau.
-
-This site is a working record of how I think, what I’ve solved, and how I typically help.
+I help teams fix analytics platforms that have grown **expensive**, **fragile**, or **hard to trust**.  
+15+ years building and modernizing data systems across cloud + BI, with a bias for measurable outcomes.  
+(Short engagements. Clear scope. Clean handover.)
 
 ---
 
-## 🧭 What I Help With
+## ✅ What I help with
 
-
-- BigQuery cost optimization and FinOps guardrails  
-- Analytics platform modernization and technical debt reduction  
-- Self-serve BI design that doesn’t break governance  
-- BI reliability, monitoring, and metadata visibility  
-
-If your analytics stack technically works but feels risky, expensive, or slow to evolve, that’s usually where I step in.
+- 💸 **BigQuery cost optimization**: spend patterns, guardrails, chargeback/showback, right-sizing
+- 🧱 **Platform modernization**: technical-debt reduction, reliability, ownership, standards
+- 📊 **Self-serve BI**: governed datasets, extract monitoring, “fewer ad-hoc requests”
+- 🤖 **Automation & GenAI workflows**: n8n pipelines, alerts, summarization, internal enablement
 
 ---
 
-## ▶️ Start Here
+## 🧭 Start here (no sales pitch)
 
-Most conversations begin with a short review or audit.
+Most conversations start with a short review. If you want a second set of eyes on:
 
-No long contracts. No big promises up front.
+- BigQuery spend spikes or unpredictable bills  
+- Tableau/BI reliability, extracts, refresh failures  
+- Governance gaps: ownership, duplication, low trust  
+- Migration planning without breaking reporting
 
-If you want a second set of eyes on:
-- BigQuery spend and usage patterns  
-- BI platform architecture  
-- Governance, reliability, or adoption issues  
+📩 **Email:** bhowmick2021@gmail.com  
+🔗 **LinkedIn:** linkedin.com/in/abhijeetbhowmick
+📄 [Resume (PDF)](/Abhijeet_Bhowmick_Resume_Data_Engineering.pdf)
 
-you can reach me here:
 
-If you’re unsure whether a short review would help, that’s usually a good place to start.
-
-📩 **bhowmick2021@gmail.com**  
-🔗 **linkedin.com/in/abhijeetbhowmick**
+➡️ **Next:** [Case Studies](./case-studies) • [About](./about)
 
 ---
 
-→ [View case studies](case-studies.md)  
-→ [About my background](about.md)
+## 🧾 Quiet credibility
+
+- 🏗️ Built and modernized analytics platforms on **GCP/BigQuery + Tableau** :contentReference[oaicite:2]{index=2}  
+- 💰 Cost outcomes: **$50K/year savings** + sustained optimization practices :contentReference[oaicite:3]{index=3}  
+- ⚙️ Automation: self-hosted **n8n + LLM** workflows for operational insight :contentReference[oaicite:4]{index=4}  
+- 🚀 Delivery: self-serve data products + adoption improvements at org scale :contentReference[oaicite:5]{index=5}  

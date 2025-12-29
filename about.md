@@ -1,48 +1,44 @@
-# 👋 About
+---
+title: About
+---
 
-I’ve spent over 15 years working across analytics, BI platforms, and data engineering—long enough to see what scales, what breaks, and what quietly becomes expensive.
+# About
 
-I started my career building internal reporting systems and BI portals, moved through platform engineering and cloud migration, and eventually took ownership of analytics platforms and governance at scale.
+I work at the intersection of **data engineering**, **BI platforms**, and **cost governance**—building systems that stay reliable after the first launch.
 
-What I enjoy most is not building dashboards—it’s fixing systems that have grown messy:
-- unclear ownership  
-- rising cloud costs  
-- fragile pipelines  
-- low trust in data  
-
-I work best in environments where judgment matters more than headcount.
+I’ve spent 15+ years moving from reporting and BI into platform ownership: migrations, modernization, automation, and governance patterns that make analytics easier to run. :contentReference[oaicite:14]{index=14}
 
 ---
 
-## How I Work
+## How I work (what you can expect)
 
-- I prefer short, focused engagements  
-- I optimize for clarity, not complexity  
-- I leave teams with systems they understand and can run  
-
-I don’t sell tools.  
-I help teams make better decisions about the ones they already have.
+- 🧩 I prefer **small, focused scopes** with clear deliverables
+- 🧾 I document decisions + handover so teams can run it after
+- 🔍 I optimize for **clarity and maintainability**, not cleverness
+- 📊 I’ll show the numbers: spend patterns, reliability signals, adoption signals
 
 ---
 
-## Quiet Credibility
+## Engagement boundaries (so projects don’t get messy)
 
-- 15+ years across BI, analytics platforms, and data engineering  
-- Led analytics modernization and FinOps initiatives saving ~$50K+/year  
-- Platforms used across marketing, finance, sales, and leadership teams  
-- Experience spanning on-prem systems, GCP, BigQuery, and Tableau  
-- Worked with global teams across India, APAC, and Europe
+**Good fit**
+- Platform / cost review (1–2 weeks)
+- Modernization or migration plan (2–4 weeks)
+- FinOps + governance advisory (ongoing, light-touch)
+- Automation pilots (alerts, monitoring, internal workflows)
 
-## 🧩 Engagement Model
+**Not a fit**
+- Open-ended “own everything” delivery with unclear ownership
+- Staff-augmentation without a defined outcome
+- Build-first when the root issue is governance/decision-making
 
-I usually work in one of these ways:
+---
 
-- **Platform or Cost Review (2–4 weeks)**  
-- **Modernization or Migration Planning**  
-- **FinOps & Governance Advisory**  
-- **Fractional Analytics Leadership**
+## Quick credibility (quiet, not loud)
 
-I don’t take on:
-- Open-ended delivery work  
-- Staff-augmentation roles  
-- “Build everything” projects without ownership clarity
+- Built and modernized platforms using **GCP/BigQuery + Tableau** :contentReference[oaicite:15]{index=15}  
+- Automation patterns using **n8n + LLM orchestration** :contentReference[oaicite:16]{index=16}  
+- Delivered self-serve data products + adoption improvements :contentReference[oaicite:17]{index=17}  
+
+If you want to talk, the easiest entry is a short review.  
+📩 bhowmick2021@gmail.com
