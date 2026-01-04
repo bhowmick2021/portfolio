@@ -4,8 +4,9 @@ title: Abhijeet Bhowmick
 
 **Data Platforms • BigQuery FinOps • BI Governance • Automation (n8n + LLMs)**
 
-I help teams fix analytics platforms that have grown **expensive**, **fragile**, or **hard to trust**.  
-15+ years building and modernizing data systems across cloud + BI, with a bias for measurable outcomes.  
+I help teams improve analytics platforms that have become **costly**, **fragile**, or **difficult to trust**.  
+With 15+ years of experience modernizing data and BI systems across cloud environments, I focus on delivering **measurable outcomes**—lower cloud spend, improved reliability, and analytics that the business can confidently rely on.
+ 
 
 ---
 
