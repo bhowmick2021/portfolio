@@ -150,21 +150,6 @@
     .skills-meta { font-size: 14px; color: var(--muted); padding-top: 20px; margin-top: 24px; border-top: 1px solid var(--border); }
     .skills-meta strong { color: var(--text); }
 
-    /* ── CERTIFICATIONS ── */
-    .certs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 28px; }
-    .cert-card {
-      display: flex; align-items: center; gap: 14px;
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 20px;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-    .cert-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-    .cert-icon { font-size: 28px; flex-shrink: 0; }
-    .cert-name { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
-    .cert-issuer { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
-    .cert-year { font-size: 12px; font-weight: 600; color: var(--teal); background: #E0F2FE; padding: 2px 8px; border-radius: 10px; }
-    .certs-edu { font-size: 14px; color: var(--muted); padding-top: 16px; border-top: 1px solid var(--border); }
-
     /* ── CONSULTING BAND ── */
     #consulting { background: var(--navy); }
     .consulting-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
@@ -220,7 +205,6 @@
       .impact-grid { grid-template-columns: repeat(2, 1fr); }
       .section-title { font-size: 24px; }
       .skills-grid { grid-template-columns: 1fr; }
-      .certs-grid { grid-template-columns: repeat(2, 1fr); }
       .testimonials-grid { grid-template-columns: 1fr; }
       .consulting-inner { flex-direction: column; align-items: flex-start; }
     }
@@ -243,7 +227,7 @@
       #hero { background: none !important; padding: 24px 0; }
       .hero-name { color: var(--text) !important; font-size: 28px; }
       .hero-eyebrow, .hero-tagline, .hero-meta { color: var(--text) !important; }
-      .impact-card, .service-card, .skill-group, .cert-card, .testimonial-card {
+      .impact-card, .service-card, .skill-group, .testimonial-card {
         box-shadow: none !important; border: 1px solid #ccc !important;
       }
       footer { background: none !important; color: var(--text) !important; }
@@ -397,6 +381,7 @@
 <section id="skills">
   <div class="container">
     <h2 class="section-title">Tools I Work With</h2>
+    <p class="services-intro">The stack behind each package — from spreadsheets and small databases up to the tools used for the Custom Automation tier.</p>
     <div class="skills-grid">
       <div class="skill-group">
         <h3 class="skill-group-title">Spreadsheets &amp; Files</h3>
@@ -436,48 +421,6 @@
       </div>
     </div>
     <p class="skills-meta"><strong>Languages:</strong> Hindi (Full Professional) &nbsp;&middot;&nbsp; English (Full Professional) &nbsp;&middot;&nbsp; Bengali (Limited Working)</p>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="container">
-    <h2 class="section-title">Certifications</h2>
-    <div class="certs-grid">
-      <div class="cert-card">
-        <span class="cert-icon">🎓</span>
-        <div class="cert-info">
-          <h3 class="cert-name">Google AI Essentials</h3>
-          <p class="cert-issuer">Google</p>
-          <span class="cert-year">2024</span>
-        </div>
-      </div>
-      <div class="cert-card">
-        <span class="cert-icon">🗺️</span>
-        <div class="cert-info">
-          <h3 class="cert-name">Foundations: Data, Data, Everywhere</h3>
-          <p class="cert-issuer">Google</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <span class="cert-icon">🤝</span>
-        <div class="cert-info">
-          <h3 class="cert-name">Stakeholder Management</h3>
-          <p class="cert-issuer">LinkedIn Learning</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <span class="cert-icon">🏅</span>
-        <div class="cert-info">
-          <h3 class="cert-name">Red Hat Certified Engineer</h3>
-          <p class="cert-issuer">Red Hat (RHCE)</p>
-          <span class="cert-year">2009</span>
-        </div>
-      </div>
-    </div>
-    <p class="certs-edu">
-      <strong>Education:</strong> B.Com — University of Mumbai &nbsp;&middot;&nbsp; Computer Diploma (GNIIT Futurz) — NIIT
-    </p>
   </div>
 </section>
 
