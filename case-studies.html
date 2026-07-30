@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Real work: AI-assisted tool builds, quick-turnaround vendor data jobs, and bigger enterprise platform work by Abhijeet Bhowmick." />
-  <title>Case Studies — Abhijeet Bhowmick</title>
+  <title>Case Studies - Abhijeet Bhowmick</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -68,8 +68,10 @@
     .platform-situation { font-size: 14px; color: var(--text); line-height: 1.65; margin-bottom: 12px; }
     .platform-did { padding-left: 18px; list-style: disc; margin-bottom: 14px; }
     .platform-did li { font-size: 13.5px; color: var(--text); line-height: 1.65; margin-bottom: 5px; }
-    .platform-outcomes { padding-left: 18px; list-style: disc; }
-    .platform-outcomes li { font-size: 13.5px; color: #166534; line-height: 1.7; margin-bottom: 5px; }
+    .platform-outcomes { list-style: none; padding-left: 0; }
+    .platform-outcomes li { background: #F0FDF4; border-left: 3px solid #22C55E; font-size: 13.5px; color: #166534; line-height: 1.6; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; }
+    .platform-outcomes li::before { content: "✅ "; }
+    .platform-outcomes li:last-child { margin-bottom: 0; }
 
     #cta { background: var(--navy); }
     .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
@@ -113,15 +115,15 @@
   <div class="container">
     <p class="page-eyebrow">Real Work</p>
     <h1 class="page-title">Case Studies</h1>
-    <p class="page-sub">Not demo projects — actual builds and outcomes. Metrics below are representative of delivered work; where numbers are estimates rather than confirmed results, that's called out.</p>
+    <p class="page-sub">Not demo projects. Actual builds and outcomes. Metrics below are representative of delivered work; where numbers are estimates rather than confirmed results, that's called out.</p>
   </div>
 </section>
 
 <!-- AI-ASSISTED BUILDS -->
 <section id="ai-builds">
   <div class="container">
-    <h2 class="section-title">Built With AI-Assisted Engineering</h2>
-    <p class="section-intro">Most of my new work now gets built using AI-assisted development (Claude Code and similar tools) — it takes a tool from idea to a working, deployed build in days instead of months. That speed is part of what makes the pricing on the <a href="./">packages page</a> realistic.</p>
+    <h2 class="section-title">🤖 Built With AI-Assisted Engineering</h2>
+    <p class="section-intro">Most of my new work now gets built using AI-assisted development (Claude Code and similar tools). It takes a tool from idea to a working, deployed build in days instead of months, and that speed is part of what makes the pricing on the <a href="./">packages page</a> realistic.</p>
     <div class="ai-grid">
 
       <div class="ai-card">
@@ -147,8 +149,8 @@
       <div class="ai-card">
         <span class="ai-icon">💰</span>
         <h3 class="ai-title">Monthly Cloud-Cost Checkup</h3>
-        <p class="ai-desc">Runs every month, quietly checks a cloud bill for waste — old snapshots, duplicate data, inefficient queries — and hands back a plain-English breakdown of exactly what's costing money and why.</p>
-        <div class="ai-outcome">Real result: one month's check caught <strong>$368/month ($4,416/year)</strong> in cloud spend that was going to waste — money that was quietly leaking out unnoticed.</div>
+        <p class="ai-desc">Runs every month, quietly checks a cloud bill for waste (old snapshots, duplicate data, inefficient queries) and hands back a plain-English breakdown of exactly what's costing money and why.</p>
+        <div class="ai-outcome">📈 Real result: one month's check caught <strong>$368/month ($4,416/year)</strong> in cloud spend that was quietly leaking out unnoticed.</div>
         <div class="ai-tags">
           <span class="tag-sm">BigQuery</span><span class="tag-sm">Google Sheets API</span><span class="tag-sm">Python</span>
         </div>
@@ -163,8 +165,8 @@
 <!-- QUICK-TURNAROUND VENDOR WORK -->
 <section id="vendor-work">
   <div class="container">
-    <h2 class="section-title">Quick-Turnaround Data Jobs</h2>
-    <p class="section-intro">The kind of scoped, "get this data usable fast" work I've done for outside vendors and partners — multi-format ingestion, cleanup, automation, and stable datasets, most delivered in 10–15 days.</p>
+    <h2 class="section-title">⚡ Quick-Turnaround Data Jobs</h2>
+    <p class="section-intro">The kind of scoped, "get this data usable fast" work I've done for outside vendors and partners: multi-format ingestion, cleanup, automation, and stable datasets, most delivered in 10–15 days.</p>
     <div class="vendor-grid">
 
       <div class="vendor-card">
@@ -184,7 +186,7 @@
       <div class="vendor-card">
         <h3 class="vendor-title">🗂️ DataProvider</h3>
         <p class="vendor-about">Global web data provider delivering structured business intelligence datasets.</p>
-        <p class="vendor-outcome">Merged monthly snapshots into dynamic views for seamless dashboard integration.</p>
+        <p class="vendor-outcome">Merged monthly snapshots into dynamic views that feed straight into the dashboards.</p>
         <div class="vendor-tags"><span class="tag-sm">Cloud Storage</span><span class="tag-sm">BigQuery Views</span></div>
       </div>
 
@@ -223,8 +225,8 @@
 <!-- BIGGER PLATFORM WORK -->
 <section id="platform">
   <div class="container">
-    <h2 class="section-title">Bigger Platform Work</h2>
-    <p class="section-intro">The enterprise-scale side of my day job — for reference, if your project ever grows past a spreadsheet or a small database.</p>
+    <h2 class="section-title">🏗️ Bigger Platform Work</h2>
+    <p class="section-intro">The enterprise-scale side of my day job, in case your project ever grows past a spreadsheet or a small database.</p>
 
     <div class="platform-card">
       <h3 class="platform-title">BigQuery Migration + Cost Optimization</h3>
@@ -232,12 +234,12 @@
       <p class="platform-situation"><strong>Situation:</strong> Legacy on-premise infrastructure and mixed query patterns led to slow delivery and unpredictable costs.</p>
       <ul class="platform-did">
         <li>Architected and executed the migration from on-premise to BigQuery</li>
-        <li>Designed migration governance — rollout planning, rollback strategy, change management</li>
+        <li>Designed migration governance: rollout planning, rollback strategy, change management</li>
         <li>Introduced partitioning, clustering, and query tuning after the move</li>
         <li>Added spend visibility, cost attribution, and anomaly-detection alerting</li>
       </ul>
       <ul class="platform-outcomes">
-        <li>30% lower infrastructure and query cost, 25% better platform availability — with zero production disruption</li>
+        <li>30% lower infrastructure and query cost, 25% better platform availability, with zero production disruption</li>
         <li>A further 40% cut in reporting latency once partitioning/clustering and FinOps guardrails were rolled out</li>
         <li>$50K+ in annual cloud savings sustained through ongoing cost controls</li>
       </ul>
@@ -269,7 +271,7 @@
       </ul>
       <ul class="platform-outcomes">
         <li>50% reduction in ad-hoc reporting requests</li>
-        <li>Faster insight turnaround and higher adoption — enterprise BI adoption up 50% across India, APAC and Europe</li>
+        <li>Faster insight turnaround and higher adoption: enterprise BI adoption up 50% across India, APAC and Europe</li>
       </ul>
     </div>
 
@@ -283,7 +285,7 @@
         <li>Reduced manual chasing and improved response time</li>
       </ul>
       <ul class="platform-outcomes">
-        <li>Fewer incidents and faster detection — no more chasing broken dashboards after the fact</li>
+        <li>Fewer incidents and faster detection, no more chasing broken dashboards after the fact</li>
       </ul>
     </div>
 
@@ -296,7 +298,7 @@
         <li>Owned orchestration, scheduling, and delivery pipeline</li>
       </ul>
       <ul class="platform-outcomes">
-        <li>Cut manual curation work by about 90% — the daily update runs itself now</li>
+        <li>Cut manual curation work by about 90%. The daily update runs itself now</li>
       </ul>
     </div>
 
