@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abhijeet Bhowmick: CSV cleanup, small database setup, data upload and transformation. Freelance data help backed by 19 years of enterprise data experience (GCP / BigQuery)." />
-  <meta name="keywords" content="CSV cleanup, spreadsheet cleanup, data entry, small database setup, data transformation, data upload, freelance data help, SQLite, Postgres, BigQuery, Excel, Google Sheets" />
-  <title>Abhijeet Bhowmick - Data Cleanup, Small Databases &amp; Data Transformation</title>
+  <meta name="description" content="Abhijeet Bhowmick: Enterprise Data Platform & Cloud Analytics Consultant. 19 years leading enterprise data platforms on Google Cloud and BigQuery, now taking on independent consulting engagements from fixed-price projects to advisory work." />
+  <meta name="keywords" content="data platform consultant, cloud analytics consultant, BigQuery consultant, cloud cost optimization, data governance, data platform modernization, CSV cleanup, small database setup, data transformation, SQLite, Postgres, Excel, Google Sheets" />
+  <title>Abhijeet Bhowmick - Enterprise Data Platform &amp; Cloud Analytics Consultant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -108,7 +108,12 @@
     #services { background: var(--grey-bg); }
     .services-intro { font-size: 15px; color: var(--muted); max-width: 640px; margin-bottom: 16px; line-height: 1.65; }
     .availability-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #166534; background: #F0FDF4; border: 1px solid #BBF7D0; padding: 6px 14px; border-radius: 20px; margin-bottom: 32px; }
-    .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 28px; }
+    .tier-heading { font-size: 14px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 16px; }
+    .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 36px; }
+    .advisory-card { background: var(--navy); border-radius: var(--radius); padding: 28px 26px; margin-bottom: 28px; }
+    .advisory-desc { font-size: 14.5px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 16px; }
+    .advisory-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .advisory-card .skill-tag { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: var(--white); }
     .package-card { position: relative; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 24px 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
     .package-card--featured { border-color: var(--teal); box-shadow: 0 4px 20px rgba(14,165,233,0.18); }
     .package-badge { position: absolute; top: -11px; left: 20px; background: var(--teal); color: var(--white); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.4px; text-transform: uppercase; }
@@ -247,7 +252,7 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="primary-nav">
-      <li><a href="#services">Packages</a></li>
+      <li><a href="#services">Engagements</a></li>
       <li><a href="https://bhowmick2021.github.io/portfolio/case-studies" target="_blank" rel="noopener">Case Studies</a></li>
       <li><a href="#background">Background</a></li>
       <li><a href="#skills">Tools</a></li>
@@ -261,12 +266,12 @@
 <section id="hero" aria-labelledby="hero-heading">
   <div class="container hero-inner">
     <div class="hero-content">
-      <p class="hero-eyebrow">Data Cleanup &amp; Small Databases &nbsp;→&nbsp; Data Pipelines &amp; Automation</p>
+      <p class="hero-eyebrow">Enterprise Data Platform &amp; Cloud Analytics Consultant</p>
       <h1 id="hero-heading" class="hero-name">Abhijeet Bhowmick</h1>
-      <p class="hero-tagline">From a quick spreadsheet fix to a full data pipeline or automation build, I bring <strong>19 years</strong> of enterprise data-platform experience (Google Cloud / BigQuery) to work of any size, sized and priced to match what you actually need.</p>
+      <p class="hero-tagline">19 years leading enterprise data platforms on Google Cloud and BigQuery. I'm now opening that experience up as an independent consulting practice, taking on engagements from focused fixed-price projects to larger advisory and implementation work.</p>
       <div class="hero-actions">
-        <a href="mailto:bhowmick2021@gmail.com?subject=Data%20task%20enquiry&amp;body=What%20kind%20of%20data%20is%20it%20(CSV%2C%20Excel%2C%20database%2C%20etc.)%3A%0A%0ARoughly%20how%20many%20rows%20or%20files%3A%0A%0AWhat%20do%20you%20need%20done%3A%0A%0AWhen%20do%20you%20need%20it%20by%3A%0A%0A" class="btn btn-primary">Email Me About Your Task</a>
-        <a href="#services" class="btn btn-outline">See What I Do</a>
+        <a href="mailto:bhowmick2021@gmail.com?subject=Consulting%20enquiry&amp;body=What%20is%20the%20problem%20you%20are%20trying%20to%20solve%3A%0A%0ARough%20scope%20(data%20size%2C%20systems%20involved%2C%20team%20size)%3A%0A%0AWhat%20would%20success%20look%20like%3A%0A%0ATimeline%3A%0A%0A" class="btn btn-primary">Start a Conversation</a>
+        <a href="#services" class="btn btn-outline">See How We Can Work Together</a>
         <a href="https://www.linkedin.com/in/abhijeetbhowmick/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
       </div>
       <p class="hero-meta">Mumbai, India (remote-friendly) &nbsp;&middot;&nbsp; bhowmick2021@gmail.com &nbsp;&middot;&nbsp; Hindi &middot; English &middot; Bengali</p>
@@ -277,14 +282,16 @@
 <!-- SERVICES -->
 <section id="services">
   <div class="container">
-    <h2 class="section-title">📦 Packages</h2>
-    <p class="services-intro">I take on a small, capped number of tasks each week so every one gets full attention and a fast reply. Pick whichever's closest to your job; final price is always confirmed before I start. I build a lot of this with AI-assisted tooling to move fast without cutting corners. Your data is never used to train anything, and I review everything myself before it reaches you.</p>
-    <span class="availability-badge">🟢 Open for new tasks this week</span>
+    <h2 class="section-title">💼 How We Can Work Together</h2>
+    <p class="services-intro">I'm currently balancing this consulting practice with a full-time role, so I take on a limited number of engagements at a time, and every one gets proper attention. There are two ways to work together: fixed-price for focused, well-defined work, and advisory or implementation engagements for larger initiatives that need more discovery. I build a lot of the fixed-price work with AI-assisted tooling to move fast without cutting corners. Your data is never used to train anything, and I review everything personally before it reaches you.</p>
+    <span class="availability-badge">🟢 Currently accepting new engagements</span>
+
+    <h3 class="tier-heading">Fixed-Price Engagements ($50 – $2,000)</h3>
     <div class="packages-grid">
 
       <div class="package-card">
         <h3 class="package-title">Quick Fix</h3>
-        <p class="package-price">$15 – $25</p>
+        <p class="package-price">$50 – $150</p>
         <p class="package-for">Best for one file, a few thousand rows, one clear goal.</p>
         <ul class="package-includes">
           <li>Dedupe, reformat, merge multiple files</li>
@@ -297,7 +304,7 @@
       <div class="package-card package-card--featured">
         <span class="package-badge">Most Requested</span>
         <h3 class="package-title">Data Setup &amp; Migration</h3>
-        <p class="package-price">$40 – $90</p>
+        <p class="package-price">$150 – $600</p>
         <p class="package-for">Best for moving data into a real database, or combining multiple sources.</p>
         <ul class="package-includes">
           <li>SQLite / Postgres / BigQuery setup</li>
@@ -309,7 +316,7 @@
 
       <div class="package-card">
         <h3 class="package-title">Custom Automation &amp; Tools</h3>
-        <p class="package-price">From $150</p>
+        <p class="package-price">$600 – $2,000</p>
         <p class="package-for">Best for recurring reports, repeat data pulls, or a small custom tool/dashboard you'd otherwise pay a dev team for.</p>
         <ul class="package-includes">
           <li>Scripted pipeline, n8n workflow, or small AI-assisted tool build</li>
@@ -320,17 +327,29 @@
       </div>
 
     </div>
+
+    <h3 class="tier-heading">Advisory &amp; Implementation Engagements</h3>
+    <div class="advisory-card">
+      <p class="advisory-desc">For larger initiatives that need discovery before a fixed scope makes sense: platform and cloud-cost reviews, modernization and migration roadmaps, data governance and metadata frameworks, or FinOps programs. Priced as a project fee or a light-touch retainer, scoped after an initial conversation about what you're trying to solve.</p>
+      <div class="advisory-tags">
+        <span class="skill-tag">Platform &amp; Cost Reviews</span>
+        <span class="skill-tag">Modernization Roadmaps</span>
+        <span class="skill-tag">Data Governance</span>
+        <span class="skill-tag">FinOps Programs</span>
+      </div>
+    </div>
+
     <div class="retainer-banner">
       <span class="retainer-icon">🔁</span>
       <div>
-        <h3 class="retainer-title">Need this every week or month?</h3>
+        <h3 class="retainer-title">Need fixed-price work every week or month?</h3>
         <p class="retainer-desc">Ask about a monthly retainer: same quality, without re-quoting every time.</p>
       </div>
     </div>
     <p class="services-more-link">
       <a href="https://bhowmick2021.github.io/portfolio/case-studies" target="_blank" rel="noopener">See examples of this kind of work →</a>
       &nbsp;&middot;&nbsp;
-      Bigger than this? <a href="#background">See my full background ↓</a>
+      <a href="#background">More on my background ↓</a>
     </p>
   </div>
 </section>
@@ -338,10 +357,10 @@
 <!-- BACKGROUND -->
 <section id="background">
   <div class="container">
-    <h2 class="section-title">🧭 Why I'm Not Just Another Freelancer</h2>
+    <h2 class="section-title">🧭 19 Years Building Enterprise Data Platforms</h2>
     <div class="summary-body">
       <p>By day, I run enterprise data platforms on Google Cloud / BigQuery for a company with users across India, APAC and Europe. That's <strong>19 years</strong> in data, moving from spreadsheets and reporting all the way up to platform architecture and cloud governance.</p>
-      <p>That means the CSV cleanup, small database, or data upload job you need done isn't a stretch for me. It's the easy end of what I already do daily. You get careful, correct work, fast turnaround, and someone who'll tell you honestly if your data needs something more than a quick fix.</p>
+      <p>I'm now opening that experience up as an independent consulting practice, alongside my full-time role. Whether it's a focused fixed-price task or a larger advisory engagement, you get careful, correct work and someone who'll tell you honestly what a project actually needs.</p>
     </div>
     <div class="impact-grid">
       <div class="impact-card">
@@ -374,6 +393,8 @@
       <span class="tag">BigQuery · GCP</span>
       <span class="tag">Data Cleaning</span>
       <span class="tag">Automation</span>
+      <span class="tag">Cloud Cost Optimization</span>
+      <span class="tag">Data Governance</span>
     </div>
   </div>
 </section>
@@ -417,7 +438,7 @@
         </div>
       </div>
       <div class="skill-group">
-        <h3 class="skill-group-title">Custom Automation Tier</h3>
+        <h3 class="skill-group-title">Advisory &amp; Platform Engagements</h3>
         <div class="skill-tags">
           <span class="skill-tag">Google Cloud Platform</span>
           <span class="skill-tag">dbt</span>
@@ -438,10 +459,10 @@
   <div class="container consulting-inner">
     <div class="consulting-copy">
       <p class="consulting-eyebrow">Ready to get started?</p>
-      <h3 class="consulting-title">Send me your file, or just describe the task</h3>
-      <p class="consulting-desc">Tell me what you're working with and what you need out of it. <strong>No long forms, no vague quotes.</strong> I'll tell you honestly what it'll take and how long it'll take.</p>
+      <h3 class="consulting-title">Tell me what you are trying to solve</h3>
+      <p class="consulting-desc">A quick spreadsheet fix or a larger platform initiative, either way. <strong>No long forms, no vague quotes.</strong> I will tell you honestly what it will take and how long it will take.</p>
     </div>
-    <a href="mailto:bhowmick2021@gmail.com?subject=Data%20task%20enquiry&amp;body=What%20kind%20of%20data%20is%20it%20(CSV%2C%20Excel%2C%20database%2C%20etc.)%3A%0A%0ARoughly%20how%20many%20rows%20or%20files%3A%0A%0AWhat%20do%20you%20need%20done%3A%0A%0AWhen%20do%20you%20need%20it%20by%3A%0A%0A" class="btn btn-outline">Email Me →</a>
+    <a href="mailto:bhowmick2021@gmail.com?subject=Consulting%20enquiry&amp;body=What%20is%20the%20problem%20you%20are%20trying%20to%20solve%3A%0A%0ARough%20scope%20(data%20size%2C%20systems%20involved%2C%20team%20size)%3A%0A%0AWhat%20would%20success%20look%20like%3A%0A%0ATimeline%3A%0A%0A" class="btn btn-outline">Start a Conversation →</a>
   </div>
 </section>
 
@@ -449,7 +470,7 @@
 <section id="testimonials">
   <div class="container">
     <h2 class="section-title">💬 What Colleagues Say</h2>
-    <p class="testimonials-note">These are professional recommendations from my day job. I'm just getting started on task work like this, so client reviews will show up here soon.</p>
+    <p class="testimonials-note">These are professional recommendations from my current role. I'm just opening up this independent consulting practice, so client references for that work will appear here as they come in.</p>
     <div class="testimonials-grid">
 
       <div class="testimonial-card">
@@ -493,7 +514,7 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <span class="footer-name">Abhijeet Bhowmick</span>
-      <span class="footer-title">Data Cleanup, Small Databases &amp; Transformation</span>
+      <span class="footer-title">Enterprise Data Platform &amp; Cloud Analytics Consultant</span>
     </div>
     <div class="footer-links">
       <a href="mailto:bhowmick2021@gmail.com">bhowmick2021@gmail.com</a>
