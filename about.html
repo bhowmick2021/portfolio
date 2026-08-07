@@ -1,130 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="How Abhijeet Bhowmick, an enterprise data platform and cloud analytics consultant with 19 years of experience, structures fixed-price and advisory consulting engagements." />
-  <title>How I Work - Abhijeet Bhowmick, Enterprise Data Platform Consultant</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --navy: #0F2144; --teal: #0EA5E9; --teal-dark: #0284C7; --white: #FFFFFF;
-      --grey-bg: #F8FAFC; --text: #1E293B; --muted: #64748B; --border: #E2E8F0;
-      --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); --transition: 0.25s ease;
-      --max-w: 1100px; --font: 'Inter', system-ui, -apple-system, sans-serif;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--white); }
-    a { color: var(--teal); text-decoration: none; }
-    a:hover { color: var(--teal-dark); }
-    ul { list-style: none; }
-    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
-    section { padding: 64px 0; }
-    .section-title { font-size: 24px; font-weight: 700; color: var(--text); margin-bottom: 28px; position: relative; padding-bottom: 12px; }
-    .section-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--teal); border-radius: 2px; }
+---
+layout: default
+title: "About - Abhijeet Bhowmick, Enterprise Data Platform Consultant"
+description: "About Abhijeet Bhowmick: 19 years in enterprise data platforms, now opening an independent consulting practice. My story, how I work, and my full professional background."
+---
+<style>
+  section { padding: 56px 0; }
+  .section-title { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 6px; position: relative; padding-bottom: 10px; }
+  .section-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--teal); border-radius: 2px; }
+  .section-intro { font-size: 14.5px; color: var(--muted); max-width: 680px; line-height: 1.7; margin: 12px 0 28px; }
 
-    #navbar { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); transition: box-shadow var(--transition); }
-    #navbar.scrolled { box-shadow: var(--shadow); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .nav-logo { font-weight: 800; font-size: 18px; color: var(--navy); letter-spacing: -0.5px; }
-    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
-    .nav-links a { font-size: 14px; font-weight: 500; color: var(--muted); }
-    .nav-links a:hover { color: var(--teal); }
-    .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
-    @media (max-width: 768px) {
-      .nav-toggle { display: flex; }
-      .nav-links {
-        display: none; flex-direction: column; gap: 0;
-        position: absolute; top: 60px; left: 0; right: 0;
-        background: var(--white); border-bottom: 1px solid var(--border);
-        padding: 8px 0; box-shadow: var(--shadow);
-      }
-      .nav-links.open { display: flex; }
-      .nav-links a { display: block; padding: 10px 24px; }
-    }
+  .page-header { background: linear-gradient(135deg, var(--navy) 0%, #0a3060 55%, var(--teal-dark) 100%); padding: 56px 0; }
+  .page-eyebrow { font-size: 13px; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .page-title { font-size: clamp(28px, 4vw, 38px); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+  .page-sub { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 640px; line-height: 1.65; }
 
-    .page-header { background: linear-gradient(135deg, var(--navy) 0%, #0a3060 55%, var(--teal-dark) 100%); padding: 56px 0; }
-    .page-eyebrow { font-size: 13px; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-    .page-title { font-size: clamp(28px, 4vw, 38px); font-weight: 800; color: var(--white); margin-bottom: 10px; }
-    .page-sub { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 640px; line-height: 1.65; }
-    .page-sub strong { color: var(--white); }
+  .story-body p { font-size: 16px; color: var(--text); line-height: 1.75; margin-bottom: 16px; }
+  .story-body p:last-child { margin-bottom: 0; }
 
-    .intro-body p { font-size: 16px; color: var(--text); line-height: 1.75; margin-bottom: 16px; }
+  #how-i-work { background: var(--grey-bg); }
+  .how-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .how-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; font-size: 14px; color: var(--text); line-height: 1.6; }
+  .how-card b { color: var(--navy); }
 
-    .how-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 8px; }
-    .how-card { background: var(--grey-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; font-size: 14px; color: var(--text); line-height: 1.6; }
-    .how-card b { color: var(--navy); }
+  .principles-list { padding-left: 18px; list-style: disc; }
+  .principles-list li { font-size: 15px; color: var(--text); line-height: 1.75; margin-bottom: 10px; }
+  .principles-list li:last-child { margin-bottom: 0; }
 
-    #scope { background: var(--grey-bg); }
-    .scope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .scope-col { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; }
-    .scope-col h3 { font-size: 13px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 12px; }
-    .scope-col ul { padding-left: 18px; list-style: disc; }
-    .scope-col li { font-size: 14px; color: var(--text); line-height: 1.7; margin-bottom: 6px; }
-    .scope-notfit { margin-top: 20px; font-size: 13px; color: var(--muted); background: #FEF2F2; border: 1px solid #FECACA; border-radius: var(--radius); padding: 12px 16px; }
-    .scope-notfit strong { color: #B91C1C; }
+  #experience { background: var(--grey-bg); }
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 0; width: 2px; background: var(--border); }
+  .timeline-item { position: relative; margin-bottom: 32px; }
+  .timeline-item:last-child { margin-bottom: 0; }
+  .timeline-marker { position: absolute; left: -24px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--teal); border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--teal); }
+  .timeline-marker--muted { background: var(--muted); box-shadow: 0 0 0 2px var(--muted); }
+  .timeline-content { background: var(--white); border-radius: var(--radius); padding: 20px 24px; border: 1px solid var(--border); }
+  .timeline-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 16px; flex-wrap: wrap; }
+  .timeline-title { font-size: 16px; font-weight: 700; color: var(--text); }
+  .timeline-company { font-size: 13.5px; color: var(--teal-dark); font-weight: 500; margin-top: 2px; }
+  .timeline-date { font-size: 12.5px; color: var(--muted); white-space: nowrap; padding: 3px 10px; background: var(--grey-bg); border-radius: 20px; border: 1px solid var(--border); height: fit-content; }
+  .timeline-bullets { padding-left: 16px; list-style: disc; }
+  .timeline-bullets li { margin-bottom: 6px; font-size: 14px; color: var(--text); line-height: 1.6; }
+  .timeline-bullets li:last-child { margin-bottom: 0; }
 
-    .cred-list { padding-left: 18px; list-style: disc; }
-    .cred-list li { font-size: 15px; color: var(--text); line-height: 1.8; margin-bottom: 8px; }
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .skill-group { background: var(--white); border-radius: var(--radius); padding: 18px 20px; border: 1px solid var(--border); }
+  .skill-group-title { font-size: 12.5px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-tag { font-size: 13px; color: var(--text); background: var(--grey-bg); padding: 5px 12px; border-radius: 16px; border: 1px solid var(--border); }
+  .skills-meta { font-size: 13.5px; color: var(--muted); padding-top: 18px; margin-top: 20px; border-top: 1px solid var(--border); }
+  .skills-meta strong { color: var(--text); }
 
-    #cta { background: var(--navy); }
-    .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-    .cta-copy h3 { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-    .cta-copy p { font-size: 13px; color: rgba(255,255,255,0.7); }
-    .btn { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: var(--radius); font-size: 14px; font-weight: 600; }
-    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); }
-    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); color: var(--white); }
+  #testimonials { background: var(--grey-bg); }
+  .testimonials-note { font-size: 13px; color: var(--muted); margin-bottom: 24px; max-width: 600px; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .testimonial-card { background: var(--white); border-radius: var(--radius); padding: 26px; border: 1px solid var(--border); position: relative; }
+  .testimonial-quote { font-size: 60px; line-height: 1; color: var(--teal); opacity: 0.2; position: absolute; top: 14px; left: 20px; font-family: Georgia, serif; font-weight: 700; }
+  .testimonial-card blockquote { padding-top: 24px; }
+  .testimonial-card blockquote p { font-size: 14.5px; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 10px; }
+  .testimonial-card blockquote p:last-child { margin-bottom: 16px; }
+  .testimonial-author { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .author-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .author-name { font-size: 13.5px; font-weight: 700; color: var(--text); }
+  .author-title { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .testimonial-source { font-size: 12px; color: var(--teal); font-weight: 500; }
 
-    footer { background: var(--navy); color: rgba(255,255,255,0.7); padding: 40px 0; }
-    .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
-    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
-    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.7); }
-    .footer-links a:hover { color: var(--teal); }
-    .footer-meta { font-size: 12px; color: rgba(255,255,255,0.4); }
+  #cta { background: var(--navy); }
+  .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .cta-copy h3 { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+  .cta-copy p { font-size: 13px; color: rgba(255,255,255,0.7); }
+  .btn { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: var(--radius); font-size: 14px; font-weight: 600; }
+  .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); }
+  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); color: var(--white); }
 
-    @media (max-width: 768px) {
-      .how-grid, .scope-grid { grid-template-columns: 1fr; }
-      .cta-inner { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
-</head>
-<body>
-
-<nav id="navbar">
-  <div class="container nav-inner">
-    <a href="./" class="nav-logo">AB</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="primary-nav">
-      <li><a href="./services">Services</a></li>
-      <li><a href="./case-studies">Case Studies</a></li>
-      <li><a href="./about">About</a></li>
-      <li><a href="./start-a-project">Start a Project</a></li>
-    </ul>
-  </div>
-</nav>
+  @media (max-width: 768px) {
+    .how-grid, .skills-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    .timeline { padding-left: 20px; }
+    .timeline::before { left: 5px; }
+    .timeline-marker { left: -18px; width: 12px; height: 12px; }
+    .cta-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
 
 <section class="page-header">
   <div class="container">
-    <p class="page-eyebrow">How I Work</p>
-    <h1 class="page-title">About</h1>
-    <p class="page-sub">I'm an <strong>enterprise data platform and cloud analytics consultant</strong> with 19 years of experience, now opening an independent consulting practice alongside my full-time role. I take on both focused fixed-price engagements and larger advisory work.</p>
+    <p class="page-eyebrow">About</p>
+    <h1 class="page-title">Abhijeet Bhowmick</h1>
+    <p class="page-sub">Enterprise data platform and cloud analytics consultant, 19 years in, now opening an independent practice alongside a full-time role.</p>
   </div>
 </section>
 
-<section id="intro">
+<!-- MY STORY -->
+<section id="my-story">
   <div class="container">
-    <div class="intro-body">
-      <p>I'm building this consulting practice around real enterprise experience: 19 years moving from reporting and BI into full platform ownership, migrations, modernization, automation, and governance patterns, at my day job running enterprise data platforms on Google Cloud / BigQuery. Right now I balance this with that full-time role, so I'm selective about the engagements I take on, but the depth behind each one is real.</p>
+    <h2 class="section-title">My Story</h2>
+    <div class="story-body">
+      <p>I've spent 19 years in data, starting in reporting and business intelligence and moving into full platform ownership: migrations, modernization, automation, and governance. By day, I run enterprise data platforms on Google Cloud and BigQuery for a company with users across India, APAC and Europe.</p>
+      <p>I'm now opening that experience up as an independent consulting practice alongside my full-time role. It's early. This is where the practice starts, not where it ends. I'm selective about what I take on because I'm doing this around a full-time job, but the depth behind every engagement is real, built over two decades of actually running the kind of platforms I now help other teams fix.</p>
     </div>
-    <h2 class="section-title">🧭 How I Work</h2>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section id="how-i-work">
+  <div class="container">
+    <h2 class="section-title">How I Work</h2>
     <div class="how-grid">
-      <div class="how-card">🧩 <b>Small, clearly scoped tasks</b> with a defined deliverable, so you know what you're getting before we start.</div>
+      <div class="how-card">🧩 <b>Small, clearly scoped work</b> with a defined deliverable, so you know what you're getting before we start.</div>
       <div class="how-card">💬 <b>Upfront pricing:</b> no surprise invoices.</div>
       <div class="how-card">🧾 <b>Clean handover:</b> documented, reusable, no "figure it out yourself" files.</div>
       <div class="how-card">🔍 I optimize for <b>clarity and maintainability</b>, not cleverness, and I'll tell you honestly if a task needs more than a quick fix.</div>
@@ -132,44 +113,237 @@
   </div>
 </section>
 
-<section id="scope">
+<!-- PRINCIPLES -->
+<section id="principles">
   <div class="container">
-    <h2 class="section-title">📋 What I Take On</h2>
-    <div class="scope-grid">
-      <div class="scope-col">
-        <h3>Fixed-Price Engagements ($50 – $2,000)</h3>
-        <ul>
-          <li>CSV / spreadsheet cleanup and formatting</li>
-          <li>Small database setup (SQLite, Postgres, BigQuery)</li>
-          <li>Data upload and migration between tools</li>
-          <li>Data transformation, pivot tables, and reports</li>
-          <li>Small custom automation tools and dashboards</li>
-        </ul>
-      </div>
-      <div class="scope-col">
-        <h3>Advisory &amp; Implementation</h3>
-        <ul>
-          <li>Platform / cloud-cost review</li>
-          <li>Modernization or migration roadmap</li>
-          <li>Data governance &amp; metadata frameworks</li>
-          <li>FinOps advisory (project-based or light-touch retainer)</li>
-          <li>Automation pilots (alerts, monitoring, workflows, n8n + LLM)</li>
-        </ul>
-      </div>
-    </div>
-    <p class="scope-notfit"><strong>Not a fit:</strong> open-ended "own everything" delivery with unclear ownership, or staff-augmentation without a defined outcome.</p>
+    <h2 class="section-title">Principles</h2>
+    <ul class="principles-list">
+      <li>I only claim what I can back up. If a result came from my day job rather than a client engagement, I say so.</li>
+      <li>I'll tell you if something isn't a fit, even if it costs me the work.</li>
+      <li>No scope creep disguised as "while we're at it."</li>
+      <li>Fixed prices are fixed. Advisory work gets scoped honestly before we start, not padded after.</li>
+    </ul>
   </div>
 </section>
 
-<section id="credibility">
+<!-- EXPERIENCE TIMELINE -->
+<section id="experience">
   <div class="container">
-    <h2 class="section-title">✅ Quick Credibility</h2>
-    <ul class="cred-list">
-      <li>19 years in data, from spreadsheets and BI to enterprise Google Cloud / BigQuery platforms</li>
-      <li>Built and modernized platforms using <strong>GCP/BigQuery + Tableau</strong></li>
-      <li>Automation patterns using <strong>n8n + LLM orchestration</strong></li>
-      <li>Delivered self-serve data products and adoption improvements at enterprise scale</li>
-    </ul>
+    <h2 class="section-title">Experience</h2>
+    <p class="section-intro">The full professional background behind the consulting practice. Also available as a <a href="./Abhijeet_Bhowmick_Resume.pdf" target="_blank" rel="noopener">PDF resume</a> or on <a href="https://www.linkedin.com/in/abhijeetbhowmick/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Manager, Data &amp; BI Platforms</h3>
+              <p class="timeline-company">Radix &middot; India</p>
+            </div>
+            <span class="timeline-date">Jul 2022 - Present</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Own the enterprise Google Cloud data platform powering analytics and reporting across India, APAC and Europe.</li>
+            <li>Lead cloud FinOps initiatives (query optimization, cost attribution, anomaly detection) delivering $40K-$60K in annual cloud savings.</li>
+            <li>Modernized BigQuery architecture through partitioning and clustering, reducing reporting latency by 30-40%.</li>
+            <li>Increased enterprise BI adoption by 40-50% through scalable self-service analytics.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Sr. Lead, BI Tech</h3>
+              <p class="timeline-company">Radix &middot; Mumbai, India</p>
+            </div>
+            <span class="timeline-date">Jun 2020 - Jul 2022</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Led the transformation from legacy on-premise analytics infrastructure to Google Cloud.</li>
+            <li>Architected the migration to BigQuery, reducing infrastructure and query costs by 25-35% while improving platform availability by 20-30%.</li>
+            <li>Designed migration governance (rollout planning, rollback strategy) with zero production disruption.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Sr Team Lead, Application Development</h3>
+              <p class="timeline-company">Radix &middot; Mumbai, India</p>
+            </div>
+            <span class="timeline-date">Oct 2016 - Jun 2020</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Designed scalable internal platforms standardizing reporting logic across business units.</li>
+            <li>Built automation frameworks that cut manual operational effort meaningfully.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Business Intelligence Team Lead</h3>
+              <p class="timeline-company">Radix &middot; Mumbai, India</p>
+            </div>
+            <span class="timeline-date">May 2015 - Oct 2016</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Designed centralized BI reporting architecture, improving accuracy and stakeholder confidence.</li>
+            <li>Reduced ad hoc reporting requests by 40-50% through scalable dashboard ecosystems.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker timeline-marker--muted"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Senior Analyst, Business Intelligence</h3>
+              <p class="timeline-company">Directi Group &middot; Mumbai, India</p>
+            </div>
+            <span class="timeline-date">Jan 2012 - May 2015</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Built enterprise BI reporting platforms supporting multiple internal business units.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker timeline-marker--muted"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Business Intelligence &amp; Development</h3>
+              <p class="timeline-company">LogicBoxes (The Directi Group) &middot; Mumbai, India</p>
+            </div>
+            <span class="timeline-date">Jun 2010 - Jan 2012</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Designed and launched an analytics portal supporting 100+ internal users.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker timeline-marker--muted"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Earlier Roles</h3>
+              <p class="timeline-company">Business Operations Liaison &middot; Mphasis &middot; Sutherland Global Services</p>
+            </div>
+            <span class="timeline-date">2006 - 2010</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Client onboarding coordination and production support, the operational foundation behind later platform and governance work.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="container">
+    <h2 class="section-title">Tools I Work With</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 class="skill-group-title">Spreadsheets &amp; Files</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Excel</span>
+          <span class="skill-tag">Google Sheets</span>
+          <span class="skill-tag">CSV / JSON Conversion</span>
+          <span class="skill-tag">Data Visualization</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">BigQuery</span>
+          <span class="skill-tag">Database Design</span>
+          <span class="skill-tag">Query Optimization</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Scripting &amp; Automation</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">n8n</span>
+          <span class="skill-tag">Workflow Automation</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Platform &amp; Advisory</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Cloud Platform</span>
+          <span class="skill-tag">dbt</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Data Governance</span>
+          <span class="skill-tag">Generative AI</span>
+        </div>
+      </div>
+    </div>
+    <p class="skills-meta"><strong>Languages:</strong> Hindi (Full Professional) &nbsp;&middot;&nbsp; English (Full Professional) &nbsp;&middot;&nbsp; Bengali (Limited Working)</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Colleagues Say</h2>
+    <p class="testimonials-note">These are professional recommendations from my current role. I'm just opening up this independent consulting practice, so client references for that work will appear here as they come in.</p>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <blockquote>
+          <p>Abhijeet is a solid data and analytics professional and someone I've always found reliable to work with. From our interactions, he consistently showed clarity in problem-solving and a structured approach to handling complex data and analytics challenges.</p>
+          <p>He works well across teams, keeps business context in mind, and focuses on building solutions that are stable, practical and easy to maintain.</p>
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">AN</div>
+          <div>
+            <p class="author-name">Aditya Nand</p>
+            <p class="author-title">2026 MBA Candidate, UC Irvine &middot; Certified ScrumMaster</p>
+            <a href="https://www.linkedin.com/in/abhijeetbhowmick/" target="_blank" rel="noopener" class="testimonial-source">View recommendation on LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <blockquote>
+          <p>I've had the opportunity to interact with Abhijeet during my time at Directi and was impressed by his structured approach to problem solving and ability to think clearly.</p>
+          <p>Abhijeet brings a collaborative mindset to discussions, asks the right questions, and focuses on practical outcomes rather than just theoretical solutions.</p>
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">VK</div>
+          <div>
+            <p class="author-name">Vishal Kotian</p>
+            <p class="author-title">Pre-Sales &middot; Strategic Partnerships &middot; Project Management</p>
+            <a href="https://www.linkedin.com/in/abhijeetbhowmick/" target="_blank" rel="noopener" class="testimonial-source">View recommendation on LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -179,43 +353,6 @@
       <h3>Have a project in mind?</h3>
       <p>Tell me what you are trying to solve, small or large.</p>
     </div>
-    <a href="mailto:bhowmick2021@gmail.com?subject=Consulting%20enquiry&body=What%20is%20the%20problem%20you%20are%20trying%20to%20solve%3A%0A%0ARough%20scope%20(data%20size%2C%20systems%20involved%2C%20team%20size)%3A%0A%0AWhat%20would%20success%20look%20like%3A%0A%0ATimeline%3A%0A%0A" class="btn btn-outline">Start a Conversation →</a>
+    <a href="./start-a-project" class="btn btn-outline">Start a Project →</a>
   </div>
 </section>
-
-<footer>
-  <div class="container footer-inner">
-    <div class="footer-links">
-      <a href="mailto:bhowmick2021@gmail.com">bhowmick2021@gmail.com</a>
-      <a href="https://www.linkedin.com/in/abhijeetbhowmick/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="./case-studies">Case Studies</a>
-      <a href="./">Home</a>
-    </div>
-    <p class="footer-meta">Mumbai, Maharashtra, India &nbsp;&middot;&nbsp; &copy; 2026 Abhijeet Bhowmick</p>
-  </div>
-</footer>
-
-<script>
-(function () {
-  'use strict';
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 10);
-  });
-  const toggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen);
-  });
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      toggle.setAttribute('aria-expanded', false);
-    });
-  });
-})();
-</script>
-
-</body>
-</html>
