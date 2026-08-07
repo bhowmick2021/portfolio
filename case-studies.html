@@ -26,12 +26,26 @@
     .section-title { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
     .section-intro { font-size: 14.5px; color: var(--muted); max-width: 680px; line-height: 1.7; margin-bottom: 28px; }
 
-    #navbar { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); }
+    #navbar { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--border); transition: box-shadow var(--transition); }
+    #navbar.scrolled { box-shadow: var(--shadow); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
     .nav-logo { font-weight: 800; font-size: 18px; color: var(--navy); letter-spacing: -0.5px; }
     .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
     .nav-links a { font-size: 14px; font-weight: 500; color: var(--muted); }
     .nav-links a:hover { color: var(--teal); }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 60px; left: 0; right: 0;
+        background: var(--white); border-bottom: 1px solid var(--border);
+        padding: 8px 0; box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 10px 24px; }
+    }
 
     .page-header { background: linear-gradient(135deg, var(--navy) 0%, #0a3060 55%, var(--teal-dark) 100%); padding: 56px 0; }
     .page-eyebrow { font-size: 13px; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
@@ -102,11 +116,14 @@
 <nav id="navbar">
   <div class="container nav-inner">
     <a href="./" class="nav-logo">AB</a>
-    <ul class="nav-links">
-      <li><a href="./#services">Engagements</a></li>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="./services">Services</a></li>
+      <li><a href="./case-studies">Case Studies</a></li>
       <li><a href="./about">About</a></li>
-      <li><a href="./">Home</a></li>
-      <li><a href="mailto:bhowmick2021@gmail.com">Contact</a></li>
+      <li><a href="./start-a-project">Start a Project</a></li>
     </ul>
   </div>
 </nav>
@@ -326,6 +343,28 @@
     <p class="footer-meta">Mumbai, Maharashtra, India &nbsp;&middot;&nbsp; &copy; 2026 Abhijeet Bhowmick</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  'use strict';
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 10);
+  });
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
