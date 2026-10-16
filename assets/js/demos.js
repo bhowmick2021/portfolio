@@ -5,6 +5,7 @@
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
 
   /* ───────── 1. BigQuery Cost Explorer ───────── */
+  /* tb = sample volume scanned per run, in TiB (fictional) */
   var Q = [
     { n: 'daily_orders_rollup', t: 'Finance', runs: 30, tb: 4.2, part: 1, clus: 0, dup: 0 },
     { n: 'exec_revenue_extract', t: 'Leadership BI', runs: 60, tb: 2.8, part: 1, clus: 1, dup: 1 },
@@ -37,8 +38,8 @@
     cx.out.innerHTML = '<div><span>Baseline / month</span><b>' + money(c0) + '</b></div><div><span>Scenario / month</span><b class="good">' + money(c1) +
       '</b></div><div><span>Scenario change</span><b>' + (d ? '−' + d.toFixed(1) + '%' : '0%') + '</b></div>';
     cx.body.innerHTML = rows;
-    $('cx-explain').textContent = 'Scenario: ' + tb0.toFixed(1) + ' TB scanned per month falls to ' + tb1.toFixed(1) +
-      ' TB. Savings apply only to queries flagged as partition-able, cluster-able or duplicated in the sample table; everything else is unchanged. ' +
+    $('cx-explain').textContent = 'Scenario: ' + tb0.toFixed(1) + ' TiB scanned per month falls to ' + tb1.toFixed(1) +
+      ' TiB. Savings apply only to queries flagged as partition-able, cluster-able or duplicated in the sample table; everything else is unchanged. ' +
       'Change the rate or the three assumptions to see which lever matters most.';
   }
   [cx.rate, cx.pr, cx.cl, cx.du].forEach(function (e) { e.addEventListener('input', costRun); });
