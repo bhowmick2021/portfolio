@@ -278,3 +278,37 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--muted);f
   .js .reveal{opacity:1;transform:none}
 }
 @media print{.site-head,.marquee,.rings{display:none}body{background:#fff;color:#000}}
+
+/* gateway: photo, skillset universe */
+.photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:50% 25%;margin:0 auto 14px;border:2px solid var(--line2);box-shadow:0 0 0 6px rgba(79,240,192,.10),0 18px 40px -16px rgba(0,0,0,.8)}
+footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px solid var(--line)}
+.aiband{padding:clamp(36px,5vw,64px) 0}
+.uni{display:grid;gap:22px;margin-top:10px}
+.core{border:1px solid var(--line2);border-radius:var(--r-lg);padding:22px;background:radial-gradient(closest-side,rgba(79,240,192,.14),transparent),var(--surface);text-align:center}
+.core h3{font:600 .75rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin:0 0 14px}
+.core-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.uchip{display:inline-block;padding:6px 12px;border-radius:999px;border:1px solid var(--line2);color:var(--text);text-decoration:none;font-size:.85rem;font-weight:500;background:rgba(255,255,255,.03);transition:border-color .2s,background .2s,transform .2s}
+.uchip:hover,.uchip:focus-visible{border-color:var(--mint);background:rgba(79,240,192,.12);color:var(--text);transform:translateY(-2px)}
+.uchip.big{font-size:1.05rem;font-weight:700;padding:10px 20px;border-color:rgba(79,240,192,.55);background:rgba(79,240,192,.10)}
+.orbit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.gcard{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:16px}
+.gcard h3{font:600 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--violet)}
+.g2 h3{color:var(--mint)}.g3 h3{color:var(--amber)}.g4 h3{color:#8EC8FF}.g5 h3{color:#FF9FD0}
+.chips-in{display:flex;flex-wrap:wrap;gap:7px}
+.chips-in .uchip{font-size:.8rem;padding:5px 10px}
+@media (min-width:980px){
+  .uni{position:relative;height:780px;display:block}
+  .core{position:absolute;left:50%;top:50%;width:280px;margin:-96px 0 0 -140px;z-index:2}
+  .orbit{position:absolute;inset:0;display:block}
+  .slot{position:absolute;left:50%;top:50%;width:210px;margin:-80px 0 0 -105px;transform:rotate(var(--a)) translateY(-300px) rotate(calc(-1 * var(--a)))}
+  .gcard{width:210px;box-shadow:0 14px 30px -18px rgba(0,0,0,.9)}
+  .uni::before{content:"";position:absolute;left:50%;top:50%;width:600px;height:600px;margin:-300px 0 0 -300px;border-radius:50%;border:1px dashed var(--line2);pointer-events:none}
+}
+@media (min-width:980px) and (prefers-reduced-motion:no-preference){
+  .orbit{animation:spin 220s linear infinite}
+  .up{animation:unspin 220s linear infinite}
+  .uni:hover .orbit,.uni:hover .up,.uni:focus-within .orbit,.uni:focus-within .up{animation-play-state:paused}
+  .core{animation:glow 6s ease-in-out infinite}
+}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes unspin{to{transform:rotate(-360deg)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(79,240,192,0)}50%{box-shadow:0 0 50px -10px rgba(79,240,192,.4)}}
