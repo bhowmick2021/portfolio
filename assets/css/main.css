@@ -325,6 +325,8 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -354,12 +356,8 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 .entry h3{font-size:1.3rem}
 .entry p{font-size:.9rem;min-height:0}
 .entry .go{position:absolute;left:18px;bottom:11px;padding:0;margin:0;font-size:.88rem}
-.e-ico{position:absolute;right:16px;top:16px;width:34px;height:34px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.03)}
-.e-ico::before,.e-ico::after{content:"";position:absolute}
-.e-remote .e-ico::before{left:8px;top:9px;width:16px;height:4px;border-radius:2px;background:var(--mint);box-shadow:0 7px 0 var(--mint),0 14px 0 rgba(79,240,192,.45)}
-.e-consulting .e-ico::before{left:7px;top:15px;width:20px;height:2px;background:var(--amber)}
-.e-consulting .e-ico::after{right:6px;top:11px;width:8px;height:8px;border-top:2px solid var(--amber);border-right:2px solid var(--amber);transform:rotate(45deg)}
-.e-recruiters .e-ico::before{left:8px;bottom:8px;width:5px;height:8px;background:var(--violet);box-shadow:7px -5px 0 var(--violet),14px -10px 0 var(--violet)}
+.e-ico{position:absolute;right:16px;top:14px;width:36px;height:36px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.03);display:grid;place-items:center;color:var(--mint)}
+.e-recruiters .e-ico{color:var(--violet)}.e-consulting .e-ico{color:var(--amber)}
 .entry:hover,.entry:focus-visible{transform:translateY(-3px)}
 
 /* Think > Build > Validate > Run */
@@ -454,3 +452,19 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 }
 
 .lib{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+
+/* brand portrait, icons */
+.logo .brand-img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--mint);box-shadow:0 0 0 3px rgba(79,240,192,.12);display:block}
+.logo picture{display:block;line-height:0}
+.logo{gap:10px}
+.logo:focus-visible .brand-img{border-color:var(--amber)}
+.ic{width:18px;height:18px;flex:none;vertical-align:-3px}
+.nav-links a{display:flex;align-items:center;gap:7px}
+.nav-links .ic{width:16px;height:16px;opacity:.75}.nav-links a[aria-current] .ic,.nav-links a:hover .ic{opacity:1;color:var(--mint)}
+.btn .ic{width:18px;height:18px}
+.flow .f-n{color:var(--mint)}.flow .f-n .ic{width:17px;height:17px;vertical-align:0}
+.flow b small{font-size:.66rem;color:var(--dim);font-weight:500;margin-right:2px}
+.demo-links .mono .ic{width:14px;height:14px;vertical-align:-2px}
+.frame-in picture{display:block;line-height:0}.frame-in img{aspect-ratio:227/264;object-fit:cover}
+@media (max-width:979px){.nav-links .ic{width:18px;height:18px}.logo .brand-img{width:34px;height:34px}}
+@media (max-width:979px){.flow b small{display:none}.flowwrap.wide .flow b small{display:inline}.flow b{white-space:nowrap}}
