@@ -327,6 +327,7 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -421,7 +422,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 .ladder ol{list-style:none;margin:0 0 14px;padding:0;display:flex;align-items:flex-end;gap:6px;height:270px}
 .ladder li:last-child{flex:1.9}.ladder li{flex:1;height:var(--h);min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:8px 6px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,rgba(169,156,255,.28),rgba(169,156,255,.07));border:1px solid rgba(169,156,255,.4)}
 .ladder li:last-child{background:linear-gradient(180deg,rgba(169,156,255,.5),rgba(169,156,255,.14));border-color:var(--mint)}
-.lb-t{font-size:.6rem;line-height:1.25;color:var(--text);font-weight:600;overflow-wrap:break-word;hyphens:auto}.lb-y{font-size:.7rem;color:var(--mint)}
+.lb-t{font-size:.6rem;line-height:1.25;color:var(--text);font-weight:600;overflow-wrap:normal;word-break:normal;hyphens:manual}.lb-y{font-size:.7rem;color:var(--mint)}
 .ladder figcaption{font:500 .7rem var(--mono);color:var(--dim);margin-top:12px;letter-spacing:.08em;text-transform:uppercase}
 .years{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .years li{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line)}
