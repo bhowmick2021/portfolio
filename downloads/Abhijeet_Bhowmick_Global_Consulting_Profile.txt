@@ -1,0 +1,38 @@
+Abhijeet Bhowmick
+BigQuery Cost Optimization & Data Automation Consultant
+Mumbai, India | bhowmick2021@gmail.com | linkedin.com/in/abhijeetbhowmick
+
+I help teams control BigQuery costs and automate recurring data work. Start with a scoped review that identifies the main cost drivers, prioritizes practical fixes, and defines what is worth implementing.
+AI-assisted delivery using GPT and Claude, with personal ownership of technical decisions, validation, and handover.
+19+ years in technology, data, and BI, including platform ownership at Directi/Radix and a 15–30% normalized BigQuery cost reduction there.
+
+THREE OFFERS
+------------
+Scope, duration and price are agreed after confirming your environment and access.
+
+1. BigQuery Cost & Performance Review
+- Problem: spend is climbing, ownership is unclear, and it is not obvious which changes matter most.
+- Deliverables: prioritized cost drivers; proposed query, table and schedule changes; expected benefit with stated assumptions (estimated from your workload); implementation scope. Optional follow-on: an agreed optimization sprint.
+
+2. Data Workflow Automation Sprint
+- Problem: a repeated reporting, reconciliation or data-preparation task consumes recurring hours.
+- Deliverables: one agreed workflow (Python, n8n, APIs, AI assistance where suitable) with exception handling, operating instructions and handover; outcome measure (hours, turnaround or errors) set at scope time. Optional follow-on: further workflows or maintenance.
+
+3. Analytics Platform Health Check
+- Problem: a lean data team has fragile BigQuery/Tableau reporting, duplicated logic or unclear dependencies.
+- Deliverables: focused assessment, priority reliability and dependency issues, practical remediation plan. Optional follow-on: bounded stabilization or part-time governance support.
+
+RELEVANT INTERNAL CASE EXAMPLES
+-------------------------------
+- BigQuery cost governance (internal, Radix): owned BigQuery cost governance end to end; 15–30% normalized BigQuery cost reduction (Aug 2025–Jan 2026) from query tuning, workload governance and itemized fixes.
+- Slow Tableau extracts (internal, Radix): approximately 95% reduction in runtime for one Tableau extract view in a benchmark (BigQuery vs a secondary reporting database). Relevant to a Health Check; benefit depends on workload.
+- Governance tooling, AI-assisted (internal, Radix): Query Doctor estimates BigQuery query cost before it runs; Atlas shows lineage, ownership and health (pilot); Governance Hub scans daily. Built with GPT and Claude; I owned the problem, architecture, validation and rollout.
+- Platform migration (internal, Radix): on-premises BI moved to BigQuery with no production disruption; relevant to an assessment of what to migrate and how to protect continuity.
+
+HOW I WORK
+----------
+Diagnose first, agree a focused written scope, deliver improvements the team can maintain, and hand over documentation. I do the work myself; GPT and Claude assist with analysis, code and documentation, and I validate every output before handover. Selective fixed-scope and part-time engagements; hours and overlap are set per engagement.
+
+NEXT STEP
+---------
+One next step: email me the main issue (BigQuery spend, a slow reporting workload, or a recurring manual data process). I will reply with whether a review or an implementation sprint is the right start. bhowmick2021@gmail.com | linkedin.com/in/abhijeetbhowmick

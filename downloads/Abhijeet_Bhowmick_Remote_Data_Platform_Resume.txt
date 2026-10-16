@@ -1,0 +1,55 @@
+Abhijeet Bhowmick
+Data Platform Lead | GCP & BigQuery | Cost Governance & AI-Assisted Delivery
+Mumbai, India | Seeking international remote opportunities | bhowmick2021@gmail.com | linkedin.com/in/abhijeetbhowmick
+
+
+SUMMARY
+-------
+Hands-on data platform owner with 19+ years across technology, BI, and automation. Combines GCP/BigQuery expertise with cost governance, operational judgment, and stakeholder alignment.
+
+SELECTED IMPACT
+---------------
+- Reduced normalized BigQuery costs by 15–30% through query and workload governance and platform optimization (Aug 2025–Jan 2026).
+- Approximately 95% reduction in runtime for one Tableau extract view in a benchmark (BigQuery vs TimescaleDB, Jun 2026).
+
+RECENT ACCOMPLISHMENTS: AI-ASSISTED DATA PLATFORM & GOVERNANCE DELIVERY
+-----------------------------------------------------------------------
+Designed, built and deployed a connected set of governance tools end to end. I own architecture, validation and rollout; GPT and Claude assist coding, debugging, tests and iteration, and I review every change.
+- GCP Governance Hub: scheduled daily governance scans, with findings in an authenticated console.
+- Query Doctor VNext: SQL analysis, formatting/highlighting and cost estimation; validated on stage before production deployment.
+- Atlas: lineage, ownership and health visibility; catalogued data assets, production pilot.
+- Shared governance backend: FastAPI service in Docker consolidating the tools; verified in staging and production, and supported operationally.
+
+EXPERIENCE
+----------
+
+Manager, Software Development Engineering (Data Science) | Jul 2022 – Present
+Radix Web Services (Directi/Radix group) | Functional scope: Data & BI Platforms | Individual contributor, sole platform owner
+- Set architecture, tooling and delivery standards for GCP/BigQuery analytics and run cost governance as sole operator.
+- Find BigQuery cost drivers from usage metadata, then fix them at the source: query and workload tuning, partitioning, clustering and storage lifecycle, each fix itemized and dated so savings stay traceable; built a live dashboard and a pre-run query cost estimator so drivers surface early.
+- Decided to serve very large Tableau extracts from a secondary TimescaleDB database instead of repeated heavy BigQuery reads; built it with a daily Airflow sync, atomic-transaction safety and Slack alerting (approximately 95% reduction in runtime for one Tableau extract view in a benchmark).
+- Rebuilt the sync in 2026 (larger test suite, staged cutover) and diagnosed two production bugs on its first live run: a string-escaping bug that silently disabled incremental decompression, and a null-value validation bug that starved the job queue. Both fixed.
+- Consolidated separate governance apps onto one shared FastAPI backend in Docker for simpler hosting and deployment, with a data-freshness API; verified in staging and production.
+- Deploy and maintain every tool I build: changes are reviewed and tested by me, staged first, and released with documented validation and rollback checkpoints.
+- Work with senior leadership and Product, Finance and Marketing stakeholders, communicating status and trade-offs clearly.
+
+Sr. Lead – BI Tech | Jun 2020 – Jul 2022
+Radix Web Solutions / Radix Web Services
+- Legacy-to-GCP transformation: led the move from on-premises BI infrastructure to GCP/BigQuery, planning rollout, rollback and business-continuity checks for a zero-disruption cutover; lowered cost, improved availability and enabled self-serve analytics.
+
+TECHNICAL SKILLS
+----------------
+Cloud and data: GCP, BigQuery, Cloud Composer/Airflow, Pub/Sub, TimescaleDB/PostgreSQL, Tableau
+Engineering: SQL, Python, FastAPI, Docker/Compose, Git, Linux, n8n
+Practice: FinOps and cost governance, data lineage and ownership, monitoring and alerting, documentation, staged releases and rollback
+
+EARLIER EXPERIENCE
+------------------
+- Radix / Directi group, 2009–2020: Sr Team Lead – Application Development (2016–20); BI Team Lead (2015–16); Senior Analyst – BI, Directi (2012–15); BI & Development, LogicBoxes, built the LB360 analytics portal (2010–12); Business Operations Liaison (2009–10).
+- Mphasis (An HP Company), Specialist – Sr Technical Associate (2007–09); Sutherland Global Services, Technical Associate (2006–07).
+
+EDUCATION AND CERTIFICATIONS
+----------------------------
+- B.Com Coursework | University of Mumbai
+- GNIIT Computer Diploma | NIIT (2002–2004)
+Stakeholder Management, Coursera (Aug 2025) · Foundations: Data, Data, Everywhere, Google via Coursera (Jul 2025) · OpenAI for Beginners: AI Assistants for Project Managers, Coursera (May 2025) · Google AI Essentials (Oct 2024) · Foundations of Project Management, Google via Coursera (Oct 2024) · Red Hat Certified Engineer, RHCE (2008–09) · Red Hat Certified System Administrator, RHCSA

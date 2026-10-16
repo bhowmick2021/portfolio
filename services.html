@@ -1,150 +1,28 @@
----
-layout: default
-title: "Consulting Services - Abhijeet Bhowmick, Enterprise Data Platform Consultant"
-description: "Consulting services from Abhijeet Bhowmick: reduce cloud analytics costs, modernize data platforms, build AI-ready data foundations, and improve data governance."
----
-<style>
-  section { padding: 60px 0; }
-  .section-title { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-  .section-intro { font-size: 14.5px; color: var(--muted); max-width: 680px; line-height: 1.7; margin-bottom: 28px; }
-
-  .page-header { background: linear-gradient(135deg, var(--navy) 0%, #0a3060 55%, var(--teal-dark) 100%); padding: 56px 0; }
-  .page-eyebrow { font-size: 13px; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-  .page-title { font-size: clamp(28px, 4vw, 38px); font-weight: 800; color: var(--white); margin-bottom: 10px; }
-  .page-sub { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 640px; line-height: 1.65; }
-
-  #outcomes { background: var(--grey-bg); }
-  .outcome-block { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 28px; box-shadow: var(--shadow); margin-bottom: 20px; }
-  .outcome-block:last-child { margin-bottom: 0; }
-  .outcome-title { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
-  .outcome-problem { font-size: 14.5px; color: var(--text); line-height: 1.7; margin-bottom: 16px; }
-  .outcome-engagements-label { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 8px; }
-  .outcome-engagements { display: flex; flex-wrap: wrap; gap: 8px; }
-  .engagement-pill { font-size: 13px; font-weight: 600; color: var(--teal-dark); background: #E0F2FE; padding: 5px 14px; border-radius: 16px; }
-  .engagement-pill:hover { background: #BAE6FD; }
-
-  .engagements-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .engagement-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 24px; box-shadow: var(--shadow); display: flex; flex-direction: column; scroll-margin-top: 80px; }
-  .engagement-title { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-  .engagement-price { font-size: 20px; font-weight: 800; color: var(--teal-dark); margin-bottom: 12px; }
-  .engagement-desc { font-size: 14px; color: var(--text); line-height: 1.65; margin-bottom: 16px; flex-grow: 1; }
-  .engagement-meta { font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 12px; display: flex; flex-direction: column; gap: 4px; }
-
-  #cta { background: var(--navy); }
-  .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-  .cta-copy h3 { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-  .cta-copy p { font-size: 13px; color: rgba(255,255,255,0.7); }
-  .btn { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: var(--radius); font-size: 14px; font-weight: 600; }
-  .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); }
-  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); color: var(--white); }
-
-  @media (max-width: 900px) { .engagements-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 768px) {
-    .cta-inner { flex-direction: column; align-items: flex-start; }
-  }
-</style>
-
-<section class="page-header">
-  <div class="container">
-    <p class="page-eyebrow">Consulting Services</p>
-    <h1 class="page-title">How I Can Help</h1>
-    <p class="page-sub">Four problems I solve for growing teams, and the engagement types that fit each one. Every engagement is scoped and priced before anything starts.</p>
-  </div>
-</section>
-
-<!-- OUTCOMES -->
-<section id="outcomes">
-  <div class="container">
-    <h2 class="section-title">Business Outcomes</h2>
-    <p class="section-intro">Pick the problem that matches what you're dealing with. Each one lists which engagement type is the right fit to start with.</p>
-
-    <div class="outcome-block">
-      <h3 class="outcome-title">Reduce Cloud Analytics Costs</h3>
-      <p class="outcome-problem">Cloud data platforms rarely get cheaper on their own. Storage grows, queries run longer than they need to, and nobody notices until the bill does. I find where the money is actually going and fix it.</p>
-      <p class="outcome-engagements-label">Possible Engagements</p>
-      <div class="outcome-engagements">
-        <a href="#quick-audit" class="engagement-pill">Quick Audit</a>
-        <a href="#optimization-sprint" class="engagement-pill">Optimization Sprint</a>
-      </div>
-    </div>
-
-    <div class="outcome-block">
-      <h3 class="outcome-title">Modernize Data Platforms</h3>
-      <p class="outcome-problem">Platforms built for last year's scale start to creak: slow queries, brittle pipelines, and a growing list of things nobody wants to touch. I plan and execute the migration or rebuild without breaking what already works.</p>
-      <p class="outcome-engagements-label">Possible Engagements</p>
-      <div class="outcome-engagements">
-        <a href="#optimization-sprint" class="engagement-pill">Optimization Sprint</a>
-        <a href="#platform-advisory" class="engagement-pill">Platform Advisory</a>
-      </div>
-    </div>
-
-    <div class="outcome-block">
-      <h3 class="outcome-title">Build AI-Ready Data Foundations</h3>
-      <p class="outcome-problem">Most AI initiatives fail on the data underneath them: inconsistent structure, missing lineage, no governance. I build the foundation that makes AI projects possible beyond a demo.</p>
-      <p class="outcome-engagements-label">Possible Engagements</p>
-      <div class="outcome-engagements">
-        <a href="#platform-advisory" class="engagement-pill">Platform Advisory</a>
-      </div>
-    </div>
-
-    <div class="outcome-block">
-      <h3 class="outcome-title">Improve Data Governance</h3>
-      <p class="outcome-problem">Governance usually shows up after something has already gone wrong: an audit, a breach, a metric nobody trusts. I build metadata, lineage and access frameworks before that happens, not after.</p>
-      <p class="outcome-engagements-label">Possible Engagements</p>
-      <div class="outcome-engagements">
-        <a href="#platform-advisory" class="engagement-pill">Platform Advisory</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ENGAGEMENT CATALOG -->
-<section id="engagements">
-  <div class="container">
-    <h2 class="section-title">Engagement Types</h2>
-    <p class="section-intro">Described once here, referenced from whichever outcome above needs it.</p>
-    <div class="engagements-grid">
-
-      <div class="engagement-card" id="quick-audit">
-        <h3 class="engagement-title">Quick Audit</h3>
-        <p class="engagement-price">$50 – $150</p>
-        <p class="engagement-desc">A 48-hour review of your cloud spend, data platform, or database setup. You get a written findings report: what's costing money, what's fragile, and what to fix first. No commitment beyond the audit itself.</p>
-        <div class="engagement-meta">
-          <span>⏱ 48 hours</span>
-          <span>Best for: a first, low-risk way to work together</span>
-        </div>
-      </div>
-
-      <div class="engagement-card" id="optimization-sprint">
-        <h3 class="engagement-title">Optimization Sprint</h3>
-        <p class="engagement-price">$150 – $2,000</p>
-        <p class="engagement-desc">The actual doing work: database builds, migrations, automation scripts, small custom tools, or a fix identified in a Quick Audit. Priced by scope once we know what's involved.</p>
-        <div class="engagement-meta">
-          <span>⏱ 2–7 days, depending on scope</span>
-          <span>Best for: a defined piece of work with a clear deliverable</span>
-        </div>
-      </div>
-
-      <div class="engagement-card" id="platform-advisory">
-        <h3 class="engagement-title">Platform Advisory</h3>
-        <p class="engagement-price">Scoped after a conversation</p>
-        <p class="engagement-desc">For larger initiatives that need discovery before a fixed scope makes sense: platform modernization, data governance and metadata frameworks, or ongoing FinOps programs. Priced as a project fee or a light-touch retainer.</p>
-        <div class="engagement-meta">
-          <span>⏱ Varies by scope</span>
-          <span>Best for: bigger initiatives, ongoing advisory needs</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="cta">
-  <div class="container cta-inner">
-    <div class="cta-copy">
-      <h3>Not sure which one fits?</h3>
-      <p>Tell me what you're trying to solve and I'll tell you honestly which engagement makes sense.</p>
-    </div>
-    <a href="./start-a-project" class="btn btn-outline">Start a Project →</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consultancy services | Abhijeet Bhowmick</title><meta name="description" content="Three scoped consulting offers: BigQuery cost review, data workflow automation, analytics platform health check."><meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%234FF0C0%27/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/css/main.css"></head>
+<body data-aud="consulting"><a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><nav class="pill-nav" aria-label="Primary"><a class="logo" href="index.html"><i aria-hidden="true">AB</i>Abhijeet Bhowmick</a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button><ul class="nav-links" id="primary-nav"><li><a href="index.html">Home</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="demos.html">Demos</a></li><li><a href="about.html">About</a></li><li><a href="services.html" aria-current="page">Services</a></li><li><a href="start-a-project.html">Contact</a></li></ul></nav>
+<nav class="aud-switch" aria-label="Choose your audience"><span>I am a</span><a href="recruiters.html">Recruiters</a><a href="remote.html">Remote Teams</a><a href="consulting.html" aria-current="page">Consulting Clients</a></nav></header>
+<main id="main"><section class="case-hero"><div class="wrap"><span class="eyebrow">For consulting clients</span><h1>Three ways to start.</h1><p class="lede">Selective fixed-scope and part-time engagements; hours and overlap are set per engagement. No fixed percentage is promised, because benefit depends on your workload.</p>
+<p class="banner" style="margin-top:20px"><b>Attribution:</b> these are potential services. My examples are internal Radix employer work, not previously delivered external client work.</p></div></section>
+<section style="padding-top:0"><div class="wrap grid3"><div class="panel reveal"><h4>01</h4><h3>BigQuery Cost &amp; Performance Review</h3><p><strong>Problem.</strong> <span style="color:var(--muted)">Spend is climbing, ownership is unclear, and it is not obvious which changes matter most.</span></p><p style="margin:0"><strong>Deliverables.</strong> <span style="color:var(--muted)">Prioritized cost drivers; proposed query, table and schedule changes; expected benefit with stated assumptions, estimated from your workload; implementation scope. Optional follow-on: an agreed optimization sprint.</span></p></div><div class="panel reveal"><h4>02</h4><h3>Data Workflow Automation Sprint</h3><p><strong>Problem.</strong> <span style="color:var(--muted)">A repeated reporting, reconciliation or data-preparation task consumes recurring hours.</span></p><p style="margin:0"><strong>Deliverables.</strong> <span style="color:var(--muted)">One agreed workflow (Python, n8n, APIs, AI assistance where suitable) with exception handling, operating instructions and handover. The outcome measure (hours, turnaround or errors) is set at scoping.</span></p></div><div class="panel reveal"><h4>03</h4><h3>Analytics Platform Health Check</h3><p><strong>Problem.</strong> <span style="color:var(--muted)">A lean data team has fragile BigQuery/Tableau reporting, duplicated logic or unclear dependencies.</span></p><p style="margin:0"><strong>Deliverables.</strong> <span style="color:var(--muted)">A focused assessment, the priority reliability and dependency issues, and a practical remediation plan. Optional follow-on: bounded stabilization or part-time governance support.</span></p></div></div></section>
+<section><div class="wrap"><div class="section-head"><span class="eyebrow">Working approach</span><h2>Diagnose first, then agree the work.</h2></div><ol class="steps"><li><b>Share the issue</b><span>BigQuery spend, a slow reporting workload, or a recurring manual process.</span></li><li><b>Agree a written scope</b><span>Scope, duration and price are agreed after confirming your environment and access.</span></li><li><b>Deliver</b><span>Improvements your team can maintain. I do the work myself; GPT and Claude assist and I validate every output.</span></li><li><b>Hand over</b><span>Documentation and a clear next step.</span></li></ol>
+<p class="ai-line" style="margin-left:0"><strong>AI-assisted delivery.</strong> Most current projects are delivered with GPT and Claude assistance, with personal ownership of technical decisions, validation and delivery.</p></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="section-head"><span class="eyebrow">Relevant internal examples</span><h2>Where the method comes from</h2></div><div class="grid2">
+<a class="panel" data-case href="case-cost.html" style="text-decoration:none;color:inherit"><h3>BigQuery cost governance</h3><p style="color:var(--muted)">15–30% normalized BigQuery cost reduction, Aug 2025–Jan 2026, BigQuery only. →</p></a>
+<a class="panel" data-case href="case-ai-platform.html" style="text-decoration:none;color:inherit"><h3>AI-assisted governance tools</h3><p style="color:var(--muted)">Query cost estimation, lineage and ownership, daily scans on a shared backend. →</p></a></div></div></section>
+<section><div class="wrap"><div class="cta-band reveal"><span class="eyebrow">Next step</span><h2>Let us talk about your problem.</h2>
+<p class="lede" style="margin-inline:auto">Direct email, no form. I reply to what you send.</p>
+<div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="mailto:bhowmick2021@gmail.com?subject=Consulting%20enquiry">Email Abhijeet</a>
+<a class="btn btn-ghost" href="https://www.linkedin.com/in/abhijeetbhowmick" rel="noopener">LinkedIn</a><a class="btn btn-ghost" href="start-a-project.html">Downloads &amp; contact</a></div></div></div></section></main>
+<footer><div class="wrap foot"><div><a class="logo" href="index.html"><i aria-hidden="true">AB</i>Abhijeet Bhowmick</a><p style="margin-top:14px;max-width:36ch">Data platforms. Cost governance. AI-assisted delivery. Mumbai, India.</p></div>
+<div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="demos.html">Demos</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="start-a-project.html">Contact</a></li></ul></div>
+<div><h4>Audiences</h4><ul><li><a href="recruiters.html">For Recruiters</a></li><li><a href="remote.html">For Remote Teams</a></li><li><a href="consulting.html">For Consulting Clients</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="mailto:bhowmick2021@gmail.com">bhowmick2021@gmail.com</a></li><li><a href="https://www.linkedin.com/in/abhijeetbhowmick" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/bhowmick2021" rel="noopener">GitHub</a></li></ul></div></div>
+<div class="wrap" style="margin-top:28px;font-size:.8rem;color:var(--dim)">© 2026 Abhijeet Bhowmick. Case studies describe employer work at Radix Web Services; they are not external client engagements.</div></footer>
+<script src="assets/js/main.js"></script></body></html>

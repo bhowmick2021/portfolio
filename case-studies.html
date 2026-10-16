@@ -1,264 +1,32 @@
----
-layout: default
-title: "Case Studies - Abhijeet Bhowmick, Enterprise Data Platform Consultant"
-description: "Case studies from Abhijeet Bhowmick, an enterprise data platform and cloud analytics consultant: AI-assisted tool builds, vendor data projects, and enterprise platform work."
----
-<style>
-  section { padding: 60px 0; }
-  .section-title { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-  .section-intro { font-size: 14.5px; color: var(--muted); max-width: 680px; line-height: 1.7; margin-bottom: 28px; }
-  .subsection-title { font-size: 15px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.6px; margin: 32px 0 12px; }
-
-  .page-header { background: linear-gradient(135deg, var(--navy) 0%, #0a3060 55%, var(--teal-dark) 100%); padding: 56px 0; }
-  .page-eyebrow { font-size: 13px; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-  .page-title { font-size: clamp(28px, 4vw, 38px); font-weight: 800; color: var(--white); margin-bottom: 10px; }
-  .page-sub { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 640px; line-height: 1.65; }
-
-  #enterprise-experience { background: var(--grey-bg); }
-  .ai-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .ai-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
-  .ai-icon { font-size: 24px; margin-bottom: 8px; }
-  .ai-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-  .ai-desc { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin-bottom: 12px; flex-grow: 1; }
-  .ai-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-  .tag-sm { font-size: 11.5px; font-weight: 500; color: var(--muted); background: var(--grey-bg); padding: 3px 9px; border-radius: 10px; border: 1px solid var(--border); }
-  .ai-status { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 700; color: #166534; }
-  .ai-outcome { background: #F0FDF4; border-left: 3px solid #22C55E; padding: 8px 12px; border-radius: 0 var(--radius) var(--radius) 0; font-size: 12.5px; color: #166534; margin-bottom: 12px; }
-  .ai-note { font-size: 13px; color: var(--muted); margin-top: 20px; }
-
-  .vendor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .vendor-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); }
-  .vendor-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
-  .vendor-about { font-size: 12.5px; color: var(--muted); line-height: 1.55; margin-bottom: 8px; }
-  .vendor-outcome { font-size: 12.5px; color: var(--text); line-height: 1.55; margin-bottom: 8px; }
-  .vendor-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-
-  .platform-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 26px; box-shadow: var(--shadow); margin-bottom: 16px; }
-  .platform-card:last-child { margin-bottom: 0; }
-  .platform-title { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
-  .platform-theme { font-size: 13px; color: var(--teal-dark); font-weight: 500; margin-bottom: 12px; }
-  .platform-situation { font-size: 14px; color: var(--text); line-height: 1.65; margin-bottom: 12px; }
-  .platform-did { padding-left: 18px; list-style: disc; margin-bottom: 14px; }
-  .platform-did li { font-size: 13.5px; color: var(--text); line-height: 1.65; margin-bottom: 5px; }
-  .platform-outcomes { list-style: none; padding-left: 0; }
-  .platform-outcomes li { background: #F0FDF4; border-left: 3px solid #22C55E; font-size: 13.5px; color: #166534; line-height: 1.6; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; }
-  .platform-outcomes li::before { content: "✅ "; }
-  .platform-outcomes li:last-child { margin-bottom: 0; }
-
-  #cta { background: var(--navy); }
-  .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-  .cta-copy h3 { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-  .cta-copy p { font-size: 13px; color: rgba(255,255,255,0.7); }
-  .btn { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: var(--radius); font-size: 14px; font-weight: 600; }
-  .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); }
-  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); color: var(--white); }
-
-  @media (max-width: 900px) {
-    .ai-grid, .vendor-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 640px) {
-    .ai-grid, .vendor-grid { grid-template-columns: 1fr; }
-    .cta-inner { flex-direction: column; align-items: flex-start; }
-  }
-</style>
-
-<section class="page-header">
-  <div class="container">
-    <p class="page-eyebrow">Real Work</p>
-    <h1 class="page-title">Case Studies</h1>
-    <p class="page-sub">Not demo projects. Actual builds and outcomes. Metrics below are representative of delivered work; where numbers are estimates rather than confirmed results, that's called out.</p>
-  </div>
-</section>
-
-<!-- ENTERPRISE EXPERIENCE -->
-<section id="enterprise-experience">
-  <div class="container">
-    <h2 class="section-title">🏢 Enterprise Experience</h2>
-    <p class="section-intro">Everything in this section describes work delivered in my current enterprise role at Radix, included because it's the clearest evidence of what I can do on a data platform at scale. It is not independent consulting work; that practice is what I'm opening up now. Figures below are generalized ranges, not exact internal numbers.</p>
-
-    <h3 class="subsection-title">AI-Assisted Tool Builds</h3>
-    <p class="section-intro">Most of my new work now gets built using AI-assisted development (Claude Code and similar tools). It takes a tool from idea to a working, deployed build in days instead of months, and that speed is part of what makes the fixed-price engagements on the <a href="./">home page</a> realistic.</p>
-    <div class="ai-grid">
-
-      <div class="ai-card">
-        <span class="ai-icon">🩺</span>
-        <h3 class="ai-title">Query Doctor</h3>
-        <p class="ai-desc">Paste a BigQuery SQL query, get an instant dry-run cost estimate, monthly cost projection, cache-hit rate, a 0–100 optimization score, and AI-generated rewrite suggestions.</p>
-        <div class="ai-tags">
-          <span class="tag-sm">Next.js</span><span class="tag-sm">FastAPI</span><span class="tag-sm">BigQuery</span><span class="tag-sm">Docker</span>
-        </div>
-        <span class="ai-status">🟢 Live &amp; deployed</span>
-      </div>
-
-      <div class="ai-card">
-        <span class="ai-icon">📊</span>
-        <h3 class="ai-title">BigQuery Cost &amp; Spend Dashboards</h3>
-        <p class="ai-desc">Executive dashboards that read BigQuery's own usage metadata to show which queries are driving spend (Pareto view, KPIs, drill-down), with AI-generated optimization tips.</p>
-        <div class="ai-tags">
-          <span class="tag-sm">FastAPI</span><span class="tag-sm">INFORMATION_SCHEMA</span><span class="tag-sm">GPT-4o</span><span class="tag-sm">Gemini</span>
-        </div>
-        <span class="ai-status">🟢 Live &amp; deployed</span>
-      </div>
-
-      <div class="ai-card">
-        <span class="ai-icon">💰</span>
-        <h3 class="ai-title">Monthly Cloud-Cost Checkup</h3>
-        <p class="ai-desc">Runs every month, quietly checks a cloud bill for waste (old snapshots, duplicate data, inefficient queries) and hands back a plain-English breakdown of exactly what's costing money and why.</p>
-        <div class="ai-outcome">📈 Real result: one month's check caught roughly <strong>$300-450/month ($3,500-5,500/year)</strong> in cloud spend that was quietly leaking out unnoticed.</div>
-        <div class="ai-tags">
-          <span class="tag-sm">BigQuery</span><span class="tag-sm">Google Sheets API</span><span class="tag-sm">Python</span>
-        </div>
-        <span class="ai-status">🟢 Live &amp; running monthly</span>
-      </div>
-
-    </div>
-    <p class="ai-note">A note on data handling: your files are never used to train any model, and everything I deliver is reviewed by me personally before it reaches you.</p>
-
-    <h3 class="subsection-title">Platform &amp; Modernization Work</h3>
-
-    <div class="platform-card">
-      <h3 class="platform-title">BigQuery Migration + Cost Optimization</h3>
-      <p class="platform-theme">Cloud modernization + FinOps discipline &middot; GCP · BigQuery · SQL · Tableau</p>
-      <p class="platform-situation"><strong>Situation:</strong> Legacy on-premise infrastructure and mixed query patterns led to slow delivery and unpredictable costs.</p>
-      <ul class="platform-did">
-        <li>Architected and executed the migration from on-premise to BigQuery</li>
-        <li>Designed migration governance: rollout planning, rollback strategy, change management</li>
-        <li>Introduced partitioning, clustering, and query tuning after the move</li>
-        <li>Added spend visibility, cost attribution, and anomaly-detection alerting</li>
-      </ul>
-      <ul class="platform-outcomes">
-        <li>25-35% lower infrastructure and query cost, 20-30% better platform availability, with zero production disruption</li>
-        <li>A further 30-40% cut in reporting latency once partitioning/clustering and FinOps guardrails were rolled out</li>
-        <li>$40K-$60K in annual cloud savings sustained through ongoing cost controls</li>
-      </ul>
-    </div>
-
-    <div class="platform-card">
-      <h3 class="platform-title">Technical Debt Reduction + Platform Modernization</h3>
-      <p class="platform-theme">Reliability + clarity + ownership &middot; BigQuery · Tableau · Governance</p>
-      <p class="platform-situation"><strong>Situation:</strong> Years of incremental BI growth caused duplicated logic, fragmented pipelines, and maintenance drag.</p>
-      <ul class="platform-did">
-        <li>Audited pipelines, scheduled queries, extracts, and "who owns what"</li>
-        <li>Standardized datasets and conventions (naming, lifecycle, documentation)</li>
-        <li>Implemented performance policies and quality scorecards</li>
-      </ul>
-      <ul class="platform-outcomes">
-        <li>Lower compute waste via lifecycle policies and optimization patterns</li>
-        <li>Better reliability and less surprise breakage across reporting</li>
-      </ul>
-    </div>
-
-    <div class="platform-card">
-      <h3 class="platform-title">Self-Serve BI Platform Launch</h3>
-      <p class="platform-theme">Reduce ad-hoc load, improve adoption &middot; GCP · BigQuery · Tableau</p>
-      <p class="platform-situation"><strong>Situation:</strong> Central BI teams were overloaded with recurring questions and custom extracts.</p>
-      <ul class="platform-did">
-        <li>Built governed shared datasets and a BI hub</li>
-        <li>Defined access patterns and documentation</li>
-        <li>Created repeatable onboarding so teams could self-serve</li>
-      </ul>
-      <ul class="platform-outcomes">
-        <li>40-50% reduction in ad-hoc reporting requests</li>
-        <li>Faster insight turnaround and higher adoption: enterprise BI adoption up 40-50% across India, APAC and Europe</li>
-      </ul>
-    </div>
-
-    <div class="platform-card">
-      <h3 class="platform-title">BI Extract Monitoring + Alert Automation</h3>
-      <p class="platform-theme">Operational BI reliability &middot; BigQuery metadata · n8n · Tableau</p>
-      <p class="platform-situation"><strong>Situation:</strong> Extract failures and stale dashboards created downtime and invisible data drift.</p>
-      <ul class="platform-did">
-        <li>Built monitoring signals from metadata and usage patterns</li>
-        <li>Automated alerting and routing (team-appropriate notifications)</li>
-        <li>Reduced manual chasing and improved response time</li>
-      </ul>
-      <ul class="platform-outcomes">
-        <li>Fewer incidents and faster detection, no more chasing broken dashboards after the fact</li>
-      </ul>
-    </div>
-
-    <div class="platform-card">
-      <h3 class="platform-title">AI-Powered Industry News Automation</h3>
-      <p class="platform-theme">Internal enablement via automation &middot; n8n · LLM summarization · Slack/email</p>
-      <p class="platform-situation"><strong>Situation:</strong> Stakeholders needed a daily signal without manual curation.</p>
-      <ul class="platform-did">
-        <li>Aggregated sources, summarized, tagged, and distributed updates</li>
-        <li>Owned orchestration, scheduling, and delivery pipeline</li>
-      </ul>
-      <ul class="platform-outcomes">
-        <li>Cut manual curation work by 80-90%. The daily update runs itself now</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- CLIENT ENGAGEMENTS -->
-<section id="client-engagements">
-  <div class="container">
-    <h2 class="section-title">🤝 Client Engagements</h2>
-    <p class="section-intro">Genuine external work for outside vendors and partners, not day-job work: multi-format ingestion, cleanup, automation, and stable datasets, most delivered in 10–15 days. I'm careful with other people's data: zero data lost or broken across this work.</p>
-    <div class="vendor-grid">
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">🧩 Pandalytics</h3>
-        <p class="vendor-about">Data analytics platform offering business intelligence APIs.</p>
-        <p class="vendor-outcome">Integrated nested JSON data into GCP and BigQuery, enabling analytics-ready dashboards.</p>
-        <div class="vendor-tags"><span class="tag-sm">Cloud Functions</span><span class="tag-sm">BigQuery</span></div>
-      </div>
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">🌐 Similarweb</h3>
-        <p class="vendor-about">Market intelligence platform offering traffic and engagement insights.</p>
-        <p class="vendor-outcome">Automated cohort generation and dashboard updates on a weekly cadence.</p>
-        <div class="vendor-tags"><span class="tag-sm">Python</span><span class="tag-sm">BigQuery</span><span class="tag-sm">Cloud Scheduler</span></div>
-      </div>
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">🗂️ DataProvider</h3>
-        <p class="vendor-about">Global web data provider delivering structured business intelligence datasets.</p>
-        <p class="vendor-outcome">Merged monthly snapshots into dynamic views that feed straight into the dashboards.</p>
-        <div class="vendor-tags"><span class="tag-sm">Cloud Storage</span><span class="tag-sm">BigQuery Views</span></div>
-      </div>
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">📑 Abuse &amp; Compliance</h3>
-        <p class="vendor-about">Third-party security and audit service for digital compliance reporting.</p>
-        <p class="vendor-outcome">Created compliance-ready reference datasets with document proofing capabilities.</p>
-        <div class="vendor-tags"><span class="tag-sm">Cloud Functions</span><span class="tag-sm">BigQuery</span></div>
-      </div>
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">🌐 DNSLookup</h3>
-        <p class="vendor-about">DNS intelligence service offering real-time and historical DNS datasets.</p>
-        <p class="vendor-outcome">Stored and optimized DNS data for scalable, big-data consumption.</p>
-        <div class="vendor-tags"><span class="tag-sm">Cloud Storage</span><span class="tag-sm">BigQuery</span></div>
-      </div>
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">🔍 Namify</h3>
-        <p class="vendor-about">AI-powered domain name generator and branding platform.</p>
-        <p class="vendor-outcome">Powered real-time domain name recommendations for Namify's platform.</p>
-        <div class="vendor-tags"><span class="tag-sm">BigQuery</span><span class="tag-sm">Cloud Functions</span></div>
-      </div>
-
-      <div class="vendor-card">
-        <h3 class="vendor-title">🌐 ICANN Zone Data</h3>
-        <p class="vendor-about">Public registry of top-level domain zone files managed by ICANN.</p>
-        <p class="vendor-outcome">Automated daily ingestion of ICANN zone files for monitoring and reporting.</p>
-        <div class="vendor-tags"><span class="tag-sm">Cloud Scheduler</span><span class="tag-sm">Workflows</span><span class="tag-sm">BigQuery</span></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="cta">
-  <div class="container cta-inner">
-    <div class="cta-copy">
-      <h3>Have something like this?</h3>
-      <p>Tell me what you are trying to solve, small or large.</p>
-    </div>
-    <a href="mailto:bhowmick2021@gmail.com?subject=Consulting%20enquiry&body=What%20is%20the%20problem%20you%20are%20trying%20to%20solve%3A%0A%0ARough%20scope%20(data%20size%2C%20systems%20involved%2C%20team%20size)%3A%0A%0AWhat%20would%20success%20look%20like%3A%0A%0ATimeline%3A%0A%0A" class="btn btn-outline">Start a Conversation →</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case studies and project library | Abhijeet Bhowmick</title><meta name="description" content="Four featured cases and a searchable library of smaller projects."><meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%234FF0C0%27/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/css/main.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><nav class="pill-nav" aria-label="Primary"><a class="logo" href="index.html"><i aria-hidden="true">AB</i>Abhijeet Bhowmick</a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button><ul class="nav-links" id="primary-nav"><li><a href="index.html">Home</a></li><li><a href="case-studies.html" aria-current="page">Cases</a></li><li><a href="demos.html">Demos</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="start-a-project.html">Contact</a></li></ul></nav>
+<nav class="aud-switch" aria-label="Choose your audience"><span>I am a</span><a href="recruiters.html">Recruiters</a><a href="remote.html">Remote Teams</a><a href="consulting.html">Consulting Clients</a></nav></header>
+<main id="main"><section class="case-hero"><div class="wrap"><span class="eyebrow">Work</span><h1>Cases and project library</h1><p class="lede">Four featured cases, each with its own full page, then a library of smaller projects you can search and filter.</p></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="case-stack"><article class="case reveal" style="--i:0"><div><div class="meta"><span class="tag">2020–22</span><span class="tag">Employer work</span></div>
+<h3>Legacy BI to GCP/BigQuery transformation</h3><p style="color:var(--muted)">On-premises BI moved to BigQuery with no production disruption.</p><ul class="checks"><li>Led architecture, rollout planning, rollback and business-continuity checks.</li><li>Standardized ETL, data modelling and access governance as part of the move.</li></ul>
+<div class="btn-row"><a class="btn btn-primary btn-sm" data-case href="case-migration.html">View case study →</a></div></div><figure class="case-art" style="margin:0"><svg class="svgbox" viewBox="0 0 640 340" role="img" aria-label="Conceptual: on-premises BI to BigQuery through a governed cutover" xmlns="http://www.w3.org/2000/svg"><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4FF0C0"/></marker></defs><rect x="24" y="110" width="150" height="120" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="99.0" y="171.0" fill="#F3EEE5" font-size="14" font-weight="600" text-anchor="middle">On-premises BI</text><text x="99.0" y="186.0" fill="#AAB3C5" font-size="11" text-anchor="middle">limited cost, availability</text><rect x="245" y="70" width="170" height="200" rx="12" fill="#0F2A2A" stroke="#4FF0C0" stroke-width="1.5"/><text x="330.0" y="171.0" fill="#F3EEE5" font-size="14" font-weight="600" text-anchor="middle">Governed cutover</text><text x="330.0" y="186.0" fill="#AAB3C5" font-size="11" text-anchor="middle">rollout plan</text><text x="330" y="190" fill="#AAB3C5" font-size="12" text-anchor="middle">rollback checkpoints</text><text x="330" y="212" fill="#AAB3C5" font-size="12" text-anchor="middle">continuity checks</text><rect x="486" y="110" width="130" height="120" rx="12" fill="#171B3A" stroke="#A99CFF" stroke-width="1.5"/><text x="551.0" y="171.0" fill="#F3EEE5" font-size="14" font-weight="600" text-anchor="middle">GCP / BigQuery</text><text x="551.0" y="186.0" fill="#AAB3C5" font-size="11" text-anchor="middle">self-serve base</text><path d="M174 170 L243 170" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M415 170 L484 170" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M545 240 C545 310 120 310 100 240" stroke="#FFC46B" stroke-width="2" fill="none" stroke-dasharray="6 5" marker-end="url(#a)"/><text x="320" y="318" fill="#FFC46B" font-size="12" text-anchor="middle">rollback path kept ready</text></svg><figcaption>Conceptual illustration, not a screenshot</figcaption></figure></article><article class="case reveal" style="--i:1"><div><div class="meta"><span class="tag">Aug 2025 – Jan 2026</span><span class="tag">Employer work</span></div>
+<h3>BigQuery cost governance</h3><p style="color:var(--muted)">Cost drivers found in usage metadata, then fixed at the source.</p><ul class="checks"><li>Query and workload tuning, partitioning and clustering, lifecycle and metadata fixes.</li><li>Itemized, dated audit with slot-utilization analysis.</li></ul>
+<div class="btn-row"><a class="btn btn-primary btn-sm" data-case href="case-cost.html">View case study →</a></div></div><figure class="case-art" style="margin:0"><svg class="svgbox" viewBox="0 0 640 340" role="img" aria-label="Conceptual: cost concentrates in a few workloads and is fixed item by item" xmlns="http://www.w3.org/2000/svg"><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4FF0C0"/></marker></defs><rect x="30" y="70" width="34" height="230" rx="6" fill="#A99CFF"/><rect x="76" y="130" width="34" height="170" rx="6" fill="#A99CFF"/><rect x="122" y="180" width="34" height="120" rx="6" fill="#A99CFF"/><rect x="168" y="230" width="34" height="70" rx="6" fill="#2b3a55"/><rect x="214" y="250" width="34" height="50" rx="6" fill="#2b3a55"/><rect x="260" y="264" width="34" height="36" rx="6" fill="#2b3a55"/><rect x="306" y="272" width="34" height="28" rx="6" fill="#2b3a55"/><rect x="352" y="280" width="34" height="20" rx="6" fill="#2b3a55"/><rect x="398" y="286" width="34" height="14" rx="6" fill="#2b3a55"/><text x="30" y="34" fill="#AAB3C5" font-size="12">Query cost by workload (shape only, no data)</text><text x="60" y="64" fill="#A99CFF" font-size="13" font-weight="600">cost concentrates here</text><rect x="470" y="60" width="150" height="36" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="545.0" y="83.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">tune queries</text><rect x="470" y="108" width="150" height="36" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="545.0" y="131.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">partition + cluster</text><rect x="470" y="156" width="150" height="36" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="545.0" y="179.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">lifecycle rules</text><rect x="470" y="204" width="150" height="36" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="545.0" y="227.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">metadata clean-up</text><text x="545" y="270" fill="#4FF0C0" font-size="13" font-weight="600" text-anchor="middle">itemized, dated fixes</text></svg><figcaption>Conceptual illustration, not data</figcaption></figure></article><article class="case reveal" style="--i:2"><div><div class="meta"><span class="tag">Benchmark Jun 2026 · rebuild Aug–Sep 2026</span><span class="tag">Employer work</span></div>
+<h3>BigQuery to TimescaleDB reporting platform</h3><p style="color:var(--muted)">Hours-long Tableau extracts served from a secondary database.</p><ul class="checks"><li>Designed and built a secondary TimescaleDB/PostgreSQL database fed by a daily Airflow sync.</li><li>Rebuilt the sync in 2026 for reliability and owned cutover validation.</li></ul>
+<div class="btn-row"><a class="btn btn-primary btn-sm" data-case href="case-timescale.html">View case study →</a></div></div><figure class="case-art" style="margin:0"><svg class="svgbox" viewBox="0 0 640 340" role="img" aria-label="Bar chart: about 95% shorter run time on TimescaleDB than on BigQuery for one view, plus the sync pipeline" xmlns="http://www.w3.org/2000/svg"><text x="30" y="34" fill="#AAB3C5" font-size="12">One large Tableau extract view: relative benchmark run time</text><rect x="30" y="56" width="580" height="50" rx="10" fill="#A99CFF"/><text x="44" y="88" fill="#060A12" font-size="15" font-weight="700">BigQuery  baseline</text><rect x="30" y="122" width="29" height="50" rx="10" fill="#4FF0C0"/><text x="69" y="154" fill="#4FF0C0" font-size="15" font-weight="700">TimescaleDB  ~95% shorter run time</text><rect x="30" y="215" width="130" height="44" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="95.0" y="242.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">BigQuery</text><rect x="185" y="215" width="150" height="44" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="260.0" y="242.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Airflow daily sync</text><rect x="360" y="215" width="120" height="44" rx="12" fill="#142033" stroke="#4FF0C0" stroke-width="1.5"/><text x="420.0" y="242.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">TimescaleDB</text><rect x="505" y="215" width="105" height="44" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="557.5" y="242.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Tableau</text><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4FF0C0"/></marker></defs><path d="M160 237 L183 237" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M335 237 L358 237" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M480 237 L503 237" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><text x="30" y="300" fill="#AAB3C5" font-size="12">Benchmark of one view, Jun 2026. Not an average. Bars drawn to scale.</text></svg><figcaption>Benchmark chart (approved figures) with a conceptual pipeline</figcaption></figure></article><article class="case reveal" style="--i:3"><div><div class="meta"><span class="tag">2026</span><span class="tag">Employer work</span><span class="tag ai">AI-assisted</span></div>
+<h3>AI-assisted data platform and governance delivery</h3><p style="color:var(--muted)">One connected 2026 delivery: Query Doctor, Atlas, Governance Hub and a shared backend.</p><ul class="checks"><li>Problem definition, architecture, stakeholder alignment, validation and rollout are mine.</li><li>GPT and Claude assisted coding, debugging, tests, documentation and iteration, and I review every change.</li></ul>
+<div class="btn-row"><a class="btn btn-primary btn-sm" data-case href="case-ai-platform.html">View case study →</a></div></div><figure class="case-art" style="margin:0"><svg class="svgbox" viewBox="0 0 640 340" role="img" aria-label="Conceptual: four tools on one shared backend, with human ownership and AI assistance roles" xmlns="http://www.w3.org/2000/svg"><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4FF0C0"/></marker></defs><rect x="24" y="30" width="170" height="46" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="109.0" y="58.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Query Doctor</text><rect x="24" y="92" width="170" height="46" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="109.0" y="120.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Atlas (pilot)</text><rect x="24" y="154" width="170" height="46" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="109.0" y="182.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Governance Hub</text><rect x="24" y="216" width="170" height="46" rx="12" fill="#142033" stroke="#2b3a55" stroke-width="1.5"/><text x="109.0" y="244.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Cost dashboards</text><rect x="250" y="92" width="150" height="126" rx="12" fill="#0F2A2A" stroke="#4FF0C0" stroke-width="1.5"/><text x="325.0" y="156.0" fill="#F3EEE5" font-size="14" font-weight="600" text-anchor="middle">Shared FastAPI backend</text><text x="325.0" y="171.0" fill="#AAB3C5" font-size="11" text-anchor="middle">Docker, staged releases</text><rect x="450" y="92" width="166" height="126" rx="12" fill="#171B3A" stroke="#A99CFF" stroke-width="1.5"/><text x="533.0" y="160.0" fill="#F3EEE5" font-size="13" font-weight="600" text-anchor="middle">Authenticated internal platform</text><path d="M194 53 L248 155" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M194 115 L248 155" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M194 177 L248 155" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M194 239 L248 155" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><path d="M400 155 L448 155" stroke="#4FF0C0" stroke-width="2" fill="none" marker-end="url(#a)"/><rect x="24" y="284" width="270" height="42" rx="12" fill="none" stroke="#FFC46B" stroke-dasharray="5 4"/><text x="159" y="310" fill="#FFC46B" font-size="12" text-anchor="middle">Owner: decisions, validation, rollout</text><rect x="320" y="284" width="296" height="42" rx="12" fill="none" stroke="#4FF0C0" stroke-dasharray="5 4"/><text x="468" y="310" fill="#4FF0C0" font-size="12" text-anchor="middle">GPT / Claude: coding, tests, docs assist</text></svg><figcaption>Conceptual illustration, not a screenshot</figcaption></figure></article></div></div></section>
+<section id="library"><div class="wrap"><div class="section-head"><span class="eyebrow">Project library</span><h2>Smaller projects</h2><p class="lede">Filter by who you are, by topic, or search. Components of the featured cases link back to their parent case.</p></div>
+<div class="lib-tools"><label class="skip-label" for="lib-q" style="position:absolute;left:-9999px">Search projects</label><input type="search" id="lib-q" placeholder="Search projects, e.g. n8n, lineage, alerts">
+<div class="chips" data-kind="aud" role="group" aria-label="Audience filter"><button type="button" class="chip" aria-pressed="true" data-v="all">All audiences</button><button type="button" class="chip" aria-pressed="false" data-v="recruiters">Recruiters</button><button type="button" class="chip" aria-pressed="false" data-v="remote">Remote Teams</button><button type="button" class="chip" aria-pressed="false" data-v="consulting">Consulting Clients</button></div></div>
+<div class="chips" data-kind="tag" role="group" aria-label="Topic filter"><button type="button" class="chip" aria-pressed="true" data-v="all">All topics</button><button type="button" class="chip" aria-pressed="false" data-v="tool">Tools</button><button type="button" class="chip" aria-pressed="false" data-v="cost">Cost</button><button type="button" class="chip" aria-pressed="false" data-v="governance">Governance</button><button type="button" class="chip" aria-pressed="false" data-v="automation">Automation</button><button type="button" class="chip" aria-pressed="false" data-v="bi">BI</button><button type="button" class="chip" aria-pressed="false" data-v="ai">AI-assisted</button><button type="button" class="chip" aria-pressed="false" data-v="historical">Historical</button></div>
+<p class="lib-count" id="lib-count" role="status" aria-live="polite" style="margin-top:20px"></p>
+<div class="lib" id="lib"><details class="lib-item" data-aud="recruiters remote consulting" data-tags="tool cost ai"><summary><span class="tag">2026</span> <span class="tag ai">AI-assisted</span><h3>Query Doctor</h3><p>Checks BigQuery SQL and estimates its cost before it runs.</p></summary><div class="body"><p>A static-HTML version has been live since about May 2026. The current VNext version adds SQL analysis, formatting and highlighting, and cost estimation, and was validated on stage before production. Part of the AI-assisted governance delivery.</p><p style="margin-top:12px"><a data-case href="case-ai-platform.html">Part of: AI-assisted data platform and governance delivery →</a></p></div></details><details class="lib-item" data-aud="recruiters remote consulting" data-tags="tool governance ai"><summary><span class="tag">2026</span> <span class="tag ai">AI-assisted</span><h3>Atlas</h3><p>Data lineage, ownership and health: what depends on what, who owns it, is it fresh.</p></summary><div class="body"><p>Phase 1 classified and catalogued data assets; Phase 2 pivoted to a lineage platform that reached a production pilot in Sep 2026 behind Google sign-in. A pilot, not general availability; scheduled refresh is paused.</p><p style="margin-top:12px"><a data-case href="case-ai-platform.html">Part of: AI-assisted data platform and governance delivery →</a></p></div></details><details class="lib-item" data-aud="recruiters remote consulting" data-tags="tool governance ai"><summary><span class="tag">2026</span> <span class="tag ai">AI-assisted</span><h3>Governance Hub</h3><p>Daily governance scanner with an attention-first console.</p></summary><div class="body"><p>Scheduled daily scans with findings in an authenticated internal platform, so leaders see what needs attention first. No coverage claims beyond daily scanning.</p><p style="margin-top:12px"><a data-case href="case-ai-platform.html">Part of: AI-assisted data platform and governance delivery →</a></p></div></details><details class="lib-item" data-aud="recruiters remote consulting" data-tags="platform ai"><summary><span class="tag">2026</span> <span class="tag ai">AI-assisted</span><h3>Shared governance backend</h3><p>One FastAPI service behind the governance tools.</p></summary><div class="body"><p>Consolidated the separate apps onto a single service with consolidated hosting and a data-freshness API; verified in staging and production (Aug 2026). The strongest component for deployment and staged-validation detail.</p><p style="margin-top:12px"><a data-case href="case-ai-platform.html">Part of: AI-assisted data platform and governance delivery →</a></p></div></details><details class="lib-item" data-aud="recruiters remote consulting" data-tags="dashboard cost"><summary><span class="tag">2025–26</span> <h3>BQ Most Expensive Queries dashboard</h3><p>A live executive view of where query cost concentrates.</p></summary><div class="body"><p>Built on BigQuery usage metadata. It is the deliverable shape of a cost review: show leaders where the money goes before changing anything. No metric attached.</p><p style="margin-top:12px"><a data-case href="case-cost.html">Part of: BigQuery cost governance →</a></p></div></details><details class="lib-item" data-aud="recruiters" data-tags="bi historical"><summary><span class="tag">2010–15</span> <h3>LB360, Directi360 and Radix360</h3><p>The group's first analytics portal, then two self-serve BI platforms.</p></summary><div class="body"><p>Designed and launched LB360 at LogicBoxes (2010–12), then built Directi360 and Radix360 at Directi (2012–15) and automated recurring MIS reporting. Historical work; not AI-assisted. It is where BI platform ownership began.</p></div></details><details class="lib-item" data-aud="recruiters" data-tags="bi governance"><summary><span class="tag">Current role</span> <h3>Self-service BI hub</h3><p>Governed shared datasets and repeatable onboarding for self-serve BI.</p></summary><div class="body"><p>Governed datasets, access patterns, documentation and onboarding so more teams can answer their own questions. Wider BI adoption is described qualitatively.</p></div></details><details class="lib-item" data-aud="recruiters" data-tags="bi historical"><summary><span class="tag">2015–20</span> <h3>BI architecture, KPI governance and internal apps</h3><p>Standardized reporting and KPI definitions, then internal applications.</p></summary><div class="body"><p>As BI Team Lead: standardized reporting and KPI definitions with Product and Finance and reduced ad-hoc load. As Sr Team Lead – Application Development: internal apps with embedded analytics, automation frameworks and mentoring. No reports claimed.</p></div></details><details class="lib-item" data-aud="recruiters consulting" data-tags="governance bi"><summary><span class="tag">Current role</span> <h3>Technical-debt reduction and BI standardization</h3><p>Audited pipelines, scheduled queries and extracts; standardized naming and ownership.</p></summary><div class="body"><p>Audited pipelines, scheduled queries, extracts and ownership; standardized naming, lifecycle and documentation; added quality scorecards. Qualitative; it matches the problem statement of an Analytics Platform Health Check.</p></div></details><details class="lib-item" data-aud="recruiters remote consulting" data-tags="automation historical"><summary><span class="tag">Historical</span> <h3>BI extract monitoring and alert automation</h3><p>Alert signals from BigQuery metadata, routed with n8n to the right teams.</p></summary><div class="body"><p>Used BigQuery metadata and usage patterns to detect problems and route alerts to owners with n8n. Faster detection, described qualitatively. A possible element of a health check or automation sprint, not delivered client work.</p></div></details><details class="lib-item" data-aud="remote consulting" data-tags="automation ai"><summary><span class="tag">2026</span> <span class="tag ai">LLM workflow</span><h3>AI industry news automation</h3><p>An n8n workflow that aggregates, summarizes, tags and distributes updates.</p></summary><div class="body"><p>Aggregates sources, summarizes with an LLM, tags and distributes to Slack and email. I own orchestration, scheduling and delivery. No effort-reduction figure is claimed. An analogue for a workflow automation sprint.</p></div></details><details class="lib-item" data-aud="remote consulting" data-tags="automation historical"><summary><span class="tag">Historical</span> <h3>Vendor data integrations</h3><p>Scheduled ingestion of vendor and registry data into BigQuery.</p></summary><div class="body"><p>Radix internal integrations: nested JSON into BigQuery, scheduled cohort and snapshot jobs, reference datasets, and daily zone-data ingestion, using Cloud Functions, Storage, Scheduler, Workflows and BigQuery. Employer work, not presented as paid client work.</p></div></details></div></div></section></main>
+<footer><div class="wrap foot"><div><a class="logo" href="index.html"><i aria-hidden="true">AB</i>Abhijeet Bhowmick</a><p style="margin-top:14px;max-width:36ch">Data platforms. Cost governance. AI-assisted delivery. Mumbai, India.</p></div>
+<div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="case-studies.html">Cases</a></li><li><a href="demos.html">Demos</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="start-a-project.html">Contact</a></li></ul></div>
+<div><h4>Audiences</h4><ul><li><a href="recruiters.html">For Recruiters</a></li><li><a href="remote.html">For Remote Teams</a></li><li><a href="consulting.html">For Consulting Clients</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="mailto:bhowmick2021@gmail.com">bhowmick2021@gmail.com</a></li><li><a href="https://www.linkedin.com/in/abhijeetbhowmick" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/bhowmick2021" rel="noopener">GitHub</a></li></ul></div></div>
+<div class="wrap" style="margin-top:28px;font-size:.8rem;color:var(--dim)">© 2026 Abhijeet Bhowmick. Case studies describe employer work at Radix Web Services; they are not external client engagements.</div></footer>
+<script src="assets/js/main.js"></script></body></html>

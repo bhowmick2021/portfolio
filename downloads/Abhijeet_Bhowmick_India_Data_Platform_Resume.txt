@@ -1,0 +1,63 @@
+Abhijeet Bhowmick
+Data & BI Platform Leader | GCP, BigQuery, Governance & Cost Optimization
+Mumbai, India | +91 8108932139 | bhowmick2021@gmail.com | linkedin.com/in/abhijeetbhowmick
+
+
+PROFILE
+-------
+Data and BI platform professional with 19+ years across technology and BI, including long-term platform ownership within Directi/Radix. Combines GCP and BigQuery expertise with stakeholder alignment, cost governance and practical automation. Owns platform direction and delivery from problem definition through implementation and operational support. Works day to day with leadership, Finance, Product and Marketing to agree priorities and trade-offs, with a focus on reliable analytics and more efficient use of resources.
+
+SELECTED OUTCOMES
+-----------------
+- Cost governance: achieved a 15–30% normalized reduction in BigQuery costs (Aug 2025–Jan 2026) through query tuning, workload governance and itemized storage and metadata fixes.
+- Platform ownership: sole owner of GCP/BigQuery cost governance and platform direction, from architecture and tooling through delivery and operations.
+- Modernization: led the on-premises to GCP/BigQuery migration (2020–22) with a zero-disruption cutover, lowering cost and improving availability; later achieved approximately 95% reduction in runtime for one Tableau extract view in a benchmark (BigQuery vs TimescaleDB secondary database, Jun 2026).
+
+RECENT ACCOMPLISHMENTS: AI-ASSISTED DATA PLATFORM & GOVERNANCE DELIVERY
+-----------------------------------------------------------------------
+Built one connected governance platform that gives the business a single view of cloud cost, data ownership and platform health. I owned problem definition, architecture, stakeholder alignment, validation and rollout; GPT and Claude assisted implementation and iteration.
+- GCP Governance Hub: automated daily governance scanning, with findings accessible to teams through an authenticated internal platform.
+- Query Doctor VNext: SQL analysis, formatting and highlighting, and cost estimation before queries run; validated on stage before production.
+- Atlas: lineage, ownership and health visibility across catalogued data assets, now in production pilot.
+- Shared governance backend: one FastAPI service consolidating the tools for delivery and operational support, verified in staging and production.
+
+EXPERIENCE
+----------
+
+Manager, Software Development Engineering (Data Science) | Jul 2022 – Present
+Radix Web Services (Directi/Radix group) | Mumbai | Functional scope: Data & BI Platforms | Individual contributor, platform owner
+- Set data-platform direction (architecture, tool selection, delivery standards, roadmap) for GCP/BigQuery analytics, working with senior leadership and with Product, Finance and Marketing stakeholders.
+- Run BigQuery cost governance across the platform: query and workload tuning, partitioning and clustering, lifecycle and metadata clean-up, and cost visibility for leadership.
+- Enabled self-service BI with governed shared datasets, documentation and repeatable onboarding; standardized naming, lifecycle and ownership across BI assets, widening BI adoption and speeding up reporting through partitioning and clustering.
+- Gave leadership clear cost visibility through a live view of where BigQuery query cost concentrates, so spending decisions start from evidence.
+- Modernized Tableau reporting with a BigQuery to TimescaleDB secondary database (daily Airflow sync, Slack alerting, near-zero marginal query cost); rebuilt the sync in 2026 and fixed two production data-integrity bugs found on its first live run.
+
+Sr. Lead – BI Tech | Jun 2020 – Jul 2022
+Radix Web Solutions / Radix Web Services
+- Led the move from on-premises BI infrastructure to GCP/BigQuery with a zero-disruption cutover; reduced infrastructure and query cost and improved availability.
+- Laid the foundation for self-serve analytics and the governance practices in use today.
+
+PROGRESSION WITHIN THE DIRECTI/RADIX GROUP (SINCE 2009)
+-------------------------------------------------------
+- 2016–2020 Sr Team Lead – Application Development, Radix: backend automation and internal application delivery.
+- 2015–2016 Business Intelligence Team Lead, Radix: ran BI delivery, agreed KPI definitions with Product and Finance and reduced ad-hoc reporting load.
+- 2012–2015 Senior Analyst – Business Intelligence, Directi Group: reporting for business leadership; built the Directi360 and Radix360 self-serve analytics platforms.
+- 2010–2012 Business Intelligence & Development, LogicBoxes (Directi): built LB360, the group's first analytics portal.
+- 2009–2010 Business Operations Liaison, Radix Web Solutions: joined the group on 13 April 2009.
+
+SKILLS
+------
+Platforms: GCP, BigQuery, Cloud Composer/Airflow, Pub/Sub, TimescaleDB/PostgreSQL, Tableau, Linux
+Governance: FinOps and cost governance, data lineage and ownership, partitioning and clustering, lifecycle policy
+Engineering: SQL, Python, FastAPI, Docker, Git, n8n
+Ways of working: stakeholder alignment, delivery planning, documentation, staged releases with rollback checkpoints
+
+EDUCATION AND CERTIFICATIONS
+----------------------------
+- B.Com Coursework | University of Mumbai
+- GNIIT Computer Diploma | NIIT (2002–2004)
+Stakeholder Management, Coursera (Aug 2025) · Foundations: Data, Data, Everywhere, Google via Coursera (Jul 2025) · OpenAI for Beginners: AI Assistants for Project Managers, Coursera (May 2025) · Google AI Essentials (Oct 2024) · Foundations of Project Management, Google via Coursera (Oct 2024) · Red Hat Certified Engineer, RHCE (2008–09) · Red Hat Certified System Administrator, RHCSA
+
+EARLIER ROLES
+-------------
+Mphasis (An HP Company) – Specialist, Sr Technical Associate, Oct 2007 – Mar 2009  |  Sutherland Global Services – Technical Associate, Oct 2006 – Sep 2007
