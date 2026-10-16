@@ -18,7 +18,10 @@
   if (aud) store.set('aud', aud);
   var cur = new URLSearchParams(location.search).get('for') || aud || store.get('aud');
   if (cur) document.querySelectorAll('a[data-case]').forEach(function (a) {
-    if (a.href.indexOf('for=') < 0) a.href += (a.href.indexOf('?') < 0 ? '?' : '&') + 'for=' + cur;
+    try {
+      var u = new URL(a.getAttribute('href'), location.href);
+      if (!u.searchParams.has('for')) { u.searchParams.set('for', cur); a.href = u.href; }
+    } catch (e) {}
   });
 
   /* case page: highlight and open the lens for the current audience */

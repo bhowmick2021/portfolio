@@ -324,6 +324,7 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -345,7 +346,8 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 .cm{position:absolute;width:16px;height:16px;border:2px solid var(--mint)}
 .cm.tl{left:-6px;top:-6px;border-right:0;border-bottom:0}.cm.tr{right:-6px;top:-6px;border-left:0;border-bottom:0}
 .cm.bl{left:-6px;bottom:-6px;border-right:0;border-top:0}.cm.br{right:-6px;bottom:-6px;border-left:0;border-top:0}
-.frame figcaption{display:flex;justify-content:space-between;margin-top:12px;font:500 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.frame figcaption{display:flex;flex-direction:column;gap:3px;margin-top:12px;font:500 .66rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.frame figcaption span:first-child{color:var(--text);letter-spacing:.1em}
 .choose{font:600 1.05rem var(--serif);margin:18px 0 10px;color:var(--text)}
 .studio .entry-grid{margin-top:0;gap:14px}
 .entry{padding:14px 18px 36px;gap:4px;border-radius:14px;flex-direction:column;position:relative}
