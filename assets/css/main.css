@@ -283,38 +283,6 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--muted);f
 .photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:50% 25%;margin:0 auto 14px;border:2px solid var(--line2);box-shadow:0 0 0 6px rgba(79,240,192,.10),0 18px 40px -16px rgba(0,0,0,.8)}
 footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px solid var(--line)}
 .aiband{padding:clamp(36px,5vw,64px) 0}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -511,3 +479,23 @@ h1,h2,h3{text-wrap:balance}
   .uni .g1{grid-area:g1}.uni .g2{grid-area:g2}.uni .g3{grid-area:g3}.uni .g4{grid-area:g4}.uni .g5{grid-area:g5}.uni .core{grid-area:core;align-self:center}
 }
 @media (max-width:979px){.uni{gap:28px}.uchip{min-height:40px}.core{padding:22px 16px 16px}.uchip.big{font-size:1rem;padding:9px 16px}}
+
+/* diagrams: wide and narrow variants of each illustration; the narrow one is used when the figure itself is small (container query) */
+.case-art{container-type:inline-size}
+.sv-n{display:none}
+@container (max-width:600px){.case-art .sv-w{display:none}.case-art .sv-n{display:block;max-width:400px;margin-inline:auto}}
+@container (max-width:440px){.sysmap .sv-w,.ribbon .sv-w{display:none}.sysmap .sv-n,.ribbon .sv-n{display:block}}
+
+/* visual audit fixes */
+.panel .skills{padding:0;margin:0;list-style:none}
+.skills li{white-space:nowrap;max-width:100%}
+.skills li small{white-space:nowrap}
+.skillgrid{grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.sv-w{max-width:900px;margin-inline:auto}
+.sysmap,.ribbon{container-type:inline-size}
+.sysmap .sv-n,.ribbon .sv-n{width:100%;height:auto}
+.sysmap .sv-w,.ribbon .sv-w{max-width:none}
+@media (max-width:560px){.eyebrow{line-height:1.55}}
+.graphwrap{overflow-x:auto;border-radius:14px}
+.graphwrap .graph{min-width:620px;display:block}
+@media (max-width:560px){.skills li{white-space:normal}}
