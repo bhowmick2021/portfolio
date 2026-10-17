@@ -340,6 +340,7 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -350,7 +351,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 
 /* gateway */
 .studio{padding:clamp(14px,2vw,26px) 0 clamp(28px,4vw,48px);position:relative}
-.studio-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(190px,18vw,230px);gap:clamp(24px,3.6vw,52px);align-items:center}
+.studio-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(180px,15vw,210px);gap:clamp(24px,3.6vw,52px);align-items:center}
 .studio-text .eyebrow{margin-bottom:12px;font-size:.72rem}
 .studio h1{font-size:clamp(2.3rem,3.7vw,3.3rem);max-width:none;margin-bottom:.35em}
 .studio h1 em{color:var(--mint);display:block;white-space:nowrap}
@@ -489,7 +490,7 @@ h1,h2,h3{text-wrap:balance}
 .studio-portrait{display:block;margin:0;padding:0;border:0;justify-self:center;width:100%;position:relative;isolation:isolate}
 .studio-portrait::before{content:"";position:absolute;inset:-12% -14%;z-index:-1;background:radial-gradient(closest-side,rgba(79,240,192,.20),rgba(169,156,255,.10) 62%,transparent 78%);filter:blur(16px)}
 .studio-portrait picture{display:block;line-height:0}
-.studio-portrait img{display:block;width:100%;height:auto;aspect-ratio:227/262;object-fit:cover;object-position:50% 0;border-radius:16px;box-shadow:0 20px 40px -22px rgba(0,0,0,.65)}
+.studio-portrait img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 0;border-radius:16px;box-shadow:0 20px 40px -22px rgba(0,0,0,.65)}
 .section-head{max-width:920px}.section-head p{max-width:720px}
 .studio{overflow-x:clip}
 @media (max-width:979px){.studio-portrait{order:-1;width:130px;justify-self:start}}
