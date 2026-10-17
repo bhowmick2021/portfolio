@@ -336,6 +336,7 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -489,3 +490,5 @@ h1,h2,h3{text-wrap:balance}
 .section-head{max-width:920px}.section-head p{max-width:720px}
 .studio{overflow-x:clip}
 @media (max-width:979px){.studio-portrait{order:-1;width:130px;justify-self:start}}
+
+.foot h3{font:600 .78rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mint);margin:0 0 12px}
