@@ -39,10 +39,47 @@
     rv.forEach(function (n) { io.observe(n); });
   } else { rv.forEach(function (n) { n.classList.add('in'); }); }
 
+  /* project-library cards: the selected card stays in place; its details open as a full-width panel after that card's row (no scrolling, focus stays on the card button) */
+  function libInit(grid) {
+    var items = [].slice.call(grid.querySelectorAll('.lib-item')), cur = null;
+    items.forEach(function (it) {
+      it.dataset.s = (it.querySelector('.lib-sum').textContent + ' ' + [].map.call(it.querySelectorAll('.lib-panel p'), function (x) { return x.textContent; }).join(' ')).toLowerCase();
+      var panel = it.querySelector('.lib-panel'), sum = it.querySelector('.lib-sum'); panel.hidden = true;
+      sum.addEventListener('click', function () { cur === it ? close() : open(it); });
+      it.querySelector('.lib-close').addEventListener('click', function () { close(); sum.focus(); });
+      panel.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); sum.focus(); } });
+    });
+    function place() {
+      if (!cur) return;
+      var panel = grid.querySelector('.lib-panel[data-for="' + cur.id + '"]') || cur.querySelector('.lib-panel');
+      panel.hidden = true; cur.appendChild(panel);            /* measure rows without the panel splitting them */
+      var vis = items.filter(function (i) { return !i.hidden; }), top = cur.offsetTop, last = cur;
+      vis.forEach(function (i) { if (Math.abs(i.offsetTop - top) < 3) last = i; });
+      grid.insertBefore(panel, last.nextSibling); panel.hidden = false;
+    }
+    function open(it) {
+      if (cur) close();
+      cur = it; var panel = it.querySelector('.lib-panel'); panel.dataset.for = it.id = it.id || 'lib-' + items.indexOf(it);
+      it.querySelector('.lib-sum').setAttribute('aria-expanded', 'true'); it.classList.add('sel'); panel.hidden = false; place();
+    }
+    function close() {
+      if (!cur) return;
+      var panel = grid.querySelector('.lib-panel[data-for="' + cur.id + '"]') || cur.querySelector('.lib-panel');
+      panel.hidden = true; cur.appendChild(panel);
+      cur.querySelector('.lib-sum').setAttribute('aria-expanded', 'false'); cur.classList.remove('sel'); cur = null;
+    }
+    function refresh() { if (cur && cur.hidden) close(); else place(); }
+    grid.addEventListener('keydown', function (e) { if (e.key === 'Escape' && cur) { var b = cur.querySelector('.lib-sum'); close(); b.focus(); } });
+    var gw = grid.clientWidth, onW = function () { if (grid.clientWidth !== gw) { gw = grid.clientWidth; place(); } };   /* re-place only when the column count can change, so opening never re-flows the page */
+    if ('ResizeObserver' in window) new ResizeObserver(onW).observe(grid); else addEventListener('resize', onW);
+    return { refresh: refresh };
+  }
+  document.querySelectorAll('.lib').forEach(function (g) { if (g.id !== 'lib') libInit(g); });
+
   /* library search + filter */
   var lib = document.getElementById('lib');
   if (lib) {
-    var items = [].slice.call(lib.querySelectorAll('.lib-item'));
+    var libCtl = libInit(lib), items = [].slice.call(lib.querySelectorAll('.lib-item'));
     var q = document.getElementById('lib-q'), count = document.getElementById('lib-count');
     var state = { aud: 'all', tag: 'all' };
     var apply = function () {
@@ -50,10 +87,10 @@
       items.forEach(function (it) {
         var ok = (state.aud === 'all' || it.dataset.aud.split(' ').indexOf(state.aud) > -1) &&
                  (state.tag === 'all' || it.dataset.tags.split(' ').indexOf(state.tag) > -1) &&
-                 (!term || it.textContent.toLowerCase().indexOf(term) > -1);
+                 (!term || it.dataset.s.indexOf(term) > -1);
         it.hidden = !ok; if (ok) n++;
       });
-      count.textContent = n + ' of ' + items.length + ' projects shown';
+      count.textContent = n + ' of ' + items.length + ' projects shown'; libCtl.refresh();
     };
     document.querySelectorAll('.chips').forEach(function (grp) {
       grp.addEventListener('click', function (e) {
@@ -153,7 +190,8 @@
     a.addEventListener('pointerleave', hideTip); a.addEventListener('focus', function () { showTip(a); }); a.addEventListener('blur', hideTip);
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hideTip(); });
-  addEventListener('scroll', hideTip, { passive: true });
+  /* scrolling dismisses a pointer tooltip; a keyboard-focused chip keeps its tooltip (focus itself can scroll the page), repositioned */
+  addEventListener('scroll', function () { if (cur && document.activeElement === cur) showTip(cur); else hideTip(); }, { passive: true });
 
   /* pause / resume, offscreen and hidden-tab pausing, reduced motion */
   function label() { btn.textContent = st.user ? 'Play animation' : 'Pause animation'; btn.setAttribute('aria-pressed', st.user); }

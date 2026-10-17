@@ -503,13 +503,26 @@ h1,h2,h3{text-wrap:balance}
 
 /* live-audit: aligned download rows and library "Details +" */
 .dl b{flex:1}
-.lib-item{display:flex;flex-direction:column}
-.lib-item summary{flex:1 0 auto;display:flex;flex-direction:column;align-items:flex-start}
-.lib-item summary::after{margin-top:auto;padding-top:12px}
-.lib-item .body{flex:none}
-/* sticky case-card stacking only when a whole card (plus nav and the stack offset) fits the viewport; otherwise cards flow normally so no action is covered */
-.case{position:static}
-@media (min-width:980px) and (min-height:840px){.case{position:sticky}}
-@media (max-width:600px){.case-art{padding:8px}}
-.lib-item[open]{grid-column:1/-1}.lib-item[open] .body{padding-right:max(22px,calc(100% - 75ch))}
+.lib-item{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:0}
+.lib-item[hidden]{display:none}
+.lib-sum{all:unset;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;flex:1 0 auto;cursor:pointer;padding:20px 22px;border-radius:var(--r);color:inherit}
+.lib-sum h3{font-size:1.1rem;margin:10px 0 6px}
+.lib-sum p{margin:0;color:var(--muted);font-size:.9rem}
+.lib-sum::after{content:"Details +";display:block;margin-top:auto;padding-top:12px;font:600 .78rem var(--mono);color:var(--mint)}
+.lib-sum[aria-expanded="true"]::after{content:"Close \2212"}
+.lib-sum:focus-visible,.lib-close:focus-visible{outline:2px solid var(--mint);outline-offset:2px}
+.lib-item:hover{border-color:var(--line2)}
+.lib-item.sel{border-color:var(--mint)}
+/* the detail panel is a full-width grid row placed after the selected card's row by main.js; without JS it stays inside its card */
+.lib-panel{padding:0 22px 22px;color:var(--muted);font-size:.93rem;border-top:1px solid var(--line);padding-top:16px}
+.lib-panel p{max-width:75ch}
+.lib-panel[hidden]{display:none}
+.lib>.lib-panel{grid-column:1/-1;border:1px solid var(--mint);border-radius:var(--r);background:var(--surface);padding:20px 22px}
+.lib-close{all:unset;box-sizing:border-box;cursor:pointer;margin-top:12px;font:600 .78rem var(--mono);color:var(--mint);padding:6px 0}
+.lib-close:hover{text-decoration:underline}
 .studio .entry p{padding-right:44px}
+.lib{overflow-anchor:none}
+
+/* short viewports (e.g. 200% zoom on a laptop): the floating header and audience pills would cover a quarter of the screen, so they scroll with the page; an open menu scrolls inside itself */
+@media (max-height:560px){.site-head{position:relative}}
+@media (max-width:979px){.nav-links.open{max-height:calc(100vh - 84px);overflow-y:auto}}
