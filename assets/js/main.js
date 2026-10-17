@@ -68,7 +68,12 @@
       panel.hidden = true; cur.appendChild(panel);
       cur.querySelector('.lib-sum').setAttribute('aria-expanded', 'false'); cur.classList.remove('sel'); cur = null;
     }
-    function refresh() { if (cur && cur.hidden) close(); else place(); }
+    function refresh() {
+      if (cur && cur.hidden) {
+        var panel = grid.querySelector('.lib-panel[data-for="' + cur.id + '"]') || cur.querySelector('.lib-panel'), had = panel.contains(document.activeElement) || cur.contains(document.activeElement);
+        close(); if (had) { var q = document.getElementById('lib-q'); if (q) q.focus(); }   /* keep keyboard focus on the filter control, not on a hidden element */
+      } else place();
+    }
     grid.addEventListener('keydown', function (e) { if (e.key === 'Escape' && cur) { var b = cur.querySelector('.lib-sum'); close(); b.focus(); } });
     var gw = grid.clientWidth, onW = function () { if (grid.clientWidth !== gw) { gw = grid.clientWidth; place(); } };   /* re-place only when the column count can change, so opening never re-flows the page */
     if ('ResizeObserver' in window) new ResizeObserver(onW).observe(grid); else addEventListener('resize', onW);

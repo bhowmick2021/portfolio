@@ -526,3 +526,4 @@ h1,h2,h3{text-wrap:balance}
 /* short viewports (e.g. 200% zoom on a laptop): the floating header and audience pills would cover a quarter of the screen, so they scroll with the page; an open menu scrolls inside itself */
 @media (max-height:560px){.site-head{position:relative}}
 @media (max-width:979px){.nav-links.open{max-height:calc(100vh - 84px);overflow-y:auto}}
+.lib-for{font:600 .78rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mint);margin:0 0 10px}
