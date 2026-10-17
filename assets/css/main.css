@@ -332,6 +332,10 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
+
+
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -342,19 +346,11 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 
 /* gateway */
 .studio{padding:clamp(14px,2vw,26px) 0 clamp(28px,4vw,48px);position:relative}
-.studio-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,4vw,56px);align-items:center}
+.studio-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(190px,18vw,230px);gap:clamp(24px,3.6vw,52px);align-items:center}
 .studio-text .eyebrow{margin-bottom:12px;font-size:.72rem}
-.studio h1{font-size:clamp(2.3rem,3.9vw,3.4rem);max-width:15ch;margin-bottom:.35em}
+.studio h1{font-size:clamp(2.3rem,3.7vw,3.3rem);max-width:none;margin-bottom:.35em}
 .studio h1 em{color:var(--mint);display:block;white-space:nowrap}
 .studio .lede{font-size:clamp(1rem,1.25vw,1.12rem);margin:0 0 14px;max-width:52ch}
-.frame{margin:0;justify-self:center;width:min(100%,290px)}
-.frame-in{position:relative;padding:10px;border:1px solid var(--line2);border-radius:6px;background:linear-gradient(160deg,rgba(79,240,192,.10),rgba(169,156,255,.08))}
-.frame-in img{width:100%;height:auto;border-radius:2px;display:block}
-.cm{position:absolute;width:16px;height:16px;border:2px solid var(--mint)}
-.cm.tl{left:-6px;top:-6px;border-right:0;border-bottom:0}.cm.tr{right:-6px;top:-6px;border-left:0;border-bottom:0}
-.cm.bl{left:-6px;bottom:-6px;border-right:0;border-top:0}.cm.br{right:-6px;bottom:-6px;border-left:0;border-top:0}
-.frame figcaption{display:flex;flex-direction:column;gap:3px;margin-top:12px;font:500 .66rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
-.frame figcaption span:first-child{color:var(--text);letter-spacing:.1em}
 .choose{font:600 1.05rem var(--serif);margin:18px 0 10px;color:var(--text)}
 .studio .entry-grid{margin-top:0;gap:14px}
 .entry{padding:14px 18px 36px;gap:4px;border-radius:14px;flex-direction:column;position:relative}
@@ -446,7 +442,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 
 @media (max-width:979px){
   .studio-grid,.split-grid{grid-template-columns:1fr}
-  .frame{order:-1;width:130px}.frame figcaption{display:none}
+  .studio-portrait{order:-1;width:130px}
   .studio h1,.hero.split h1{max-width:none}
   .studio h1 em{white-space:normal}
   .flow{grid-template-columns:repeat(4,1fr);gap:6px}.flow::before,.flow::after{display:none}
@@ -476,7 +472,6 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 .flow .f-n{color:var(--mint)}.flow .f-n .ic{width:17px;height:17px;vertical-align:0}
 .flow b small{font-size:.66rem;color:var(--dim);font-weight:500;margin-right:2px}
 .demo-links .mono .ic{width:14px;height:14px;vertical-align:-2px}
-.frame-in picture{display:block;line-height:0}.frame-in img{aspect-ratio:227/264;object-fit:cover}
 @media (max-width:979px){.nav-links .ic{width:18px;height:18px}.logo .brand-img{width:34px;height:34px}}
 @media (max-width:979px){.flow b small{display:none}.flowwrap.wide .flow b small{display:inline}.flow b{white-space:nowrap}}
 
@@ -485,3 +480,12 @@ h1,h2,h3{text-wrap:balance}
 .lede,.section-head p{text-wrap:pretty}
 .hero.split + section{padding-top:clamp(44px,5.5vw,80px)}
 .nb{white-space:nowrap}
+
+/* clean portrait: rounded image, soft glow, no frame or caption (bottom 2px of the source is a white scan row; cropped, not stretched) */
+.studio-portrait{display:block;margin:0;padding:0;border:0;justify-self:center;width:100%;position:relative;isolation:isolate}
+.studio-portrait::before{content:"";position:absolute;inset:-12% -14%;z-index:-1;background:radial-gradient(closest-side,rgba(79,240,192,.20),rgba(169,156,255,.10) 62%,transparent 78%);filter:blur(16px)}
+.studio-portrait picture{display:block;line-height:0}
+.studio-portrait img{display:block;width:100%;height:auto;aspect-ratio:227/262;object-fit:cover;object-position:50% 0;border-radius:16px;box-shadow:0 20px 40px -22px rgba(0,0,0,.65)}
+.section-head{max-width:920px}.section-head p{max-width:720px}
+.studio{overflow-x:clip}
+@media (max-width:979px){.studio-portrait{order:-1;width:130px;justify-self:start}}
