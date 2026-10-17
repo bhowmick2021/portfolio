@@ -484,7 +484,7 @@ h1,h2,h3{text-wrap:balance}
 .case-art{container-type:inline-size}
 .sv-n{display:none}
 @container (max-width:600px){.case-art .sv-w{display:none}.case-art .sv-n{display:block;max-width:400px;margin-inline:auto}}
-@container (max-width:440px){.sysmap .sv-w,.ribbon .sv-w{display:none}.sysmap .sv-n,.ribbon .sv-n{display:block}}
+@container (max-width:560px){.sysmap .sv-w,.ribbon .sv-w{display:none}.sysmap .sv-n,.ribbon .sv-n{display:block;max-width:400px;margin-inline:auto}}
 
 /* visual audit fixes */
 .panel .skills{padding:0;margin:0;list-style:none}
@@ -494,8 +494,22 @@ h1,h2,h3{text-wrap:balance}
 .sv-w{max-width:900px;margin-inline:auto}
 .sysmap,.ribbon{container-type:inline-size}
 .sysmap .sv-n,.ribbon .sv-n{width:100%;height:auto}
+.sysmap,.ribbon{padding-block:6px}
 .sysmap .sv-w,.ribbon .sv-w{max-width:none}
 @media (max-width:560px){.eyebrow{line-height:1.55}}
 .graphwrap{overflow-x:auto;border-radius:14px}
 .graphwrap .graph{min-width:620px;display:block}
 @media (max-width:560px){.skills li{white-space:normal}}
+
+/* live-audit: aligned download rows and library "Details +" */
+.dl b{flex:1}
+.lib-item{display:flex;flex-direction:column}
+.lib-item summary{flex:1 0 auto;display:flex;flex-direction:column;align-items:flex-start}
+.lib-item summary::after{margin-top:auto;padding-top:12px}
+.lib-item .body{flex:none}
+/* sticky case-card stacking only when a whole card (plus nav and the stack offset) fits the viewport; otherwise cards flow normally so no action is covered */
+.case{position:static}
+@media (min-width:980px) and (min-height:840px){.case{position:sticky}}
+@media (max-width:600px){.case-art{padding:8px}}
+.lib-item[open]{grid-column:1/-1}.lib-item[open] .body{padding-right:max(22px,calc(100% - 75ch))}
+.studio .entry p{padding-right:44px}
