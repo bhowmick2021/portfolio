@@ -328,6 +328,10 @@ footer.mini{padding:22px 0 30px;text-align:center;font-size:.9rem;border-top:1px
 
 
 
+
+
+
+
 /* ═════ personal engineering studio (appended by build; source: portfolio/tools/studio.css) ═════ */
 body[data-aud=consulting]{--mint:#FFC46B;--mint-d:#C98F2E}
 body[data-aud=recruiters]{--mint:#A99CFF;--mint-d:#7A6BE0}
@@ -375,6 +379,12 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 .flow .f-d{font-size:.82rem;color:var(--muted);line-height:1.4}
 .flow .f-o{font:500 .72rem var(--mono);color:var(--text);padding-top:4px;border-top:1px solid var(--line);margin-top:4px}
 .flowwrap.wide .flow{gap:20px}.flowwrap.wide .flow .f-d{font-size:.92rem}
+.flow li{height:100%}.flow .f-d{flex:1}
+@media (min-width:980px){@supports (grid-template-rows:subgrid){
+  .flow,.flowwrap.wide .flow{grid-template-rows:repeat(5,auto);row-gap:4px;column-gap:10px}.flowwrap.wide .flow{column-gap:20px}
+  .flow li{display:grid;grid-row:span 5;grid-template-rows:subgrid;height:auto}
+  .flow .who{justify-self:start;align-self:start}
+}}
 .aiband{padding:clamp(32px,4.5vw,56px) 0}
 .aiq{color:var(--muted);margin:22px 0 0;max-width:80ch;font-size:.95rem}
 @media (prefers-reduced-motion:no-preference){.flow::after{animation:travel 7s ease-in-out infinite}}
@@ -420,9 +430,9 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 /* recruiters: staircase, years, fact sheet */
 .ladder{padding:18px 18px 14px}
 .ladder ol{list-style:none;margin:0 0 14px;padding:0;display:flex;align-items:flex-end;gap:6px;height:270px}
-.ladder li:last-child{flex:1.9}.ladder li{flex:1;height:var(--h);min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:8px 6px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,rgba(169,156,255,.28),rgba(169,156,255,.07));border:1px solid rgba(169,156,255,.4)}
+.ladder li:last-child{flex:2.6}.ladder li{flex:1;height:var(--h);min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:8px 6px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,rgba(169,156,255,.28),rgba(169,156,255,.07));border:1px solid rgba(169,156,255,.4)}
 .ladder li:last-child{background:linear-gradient(180deg,rgba(169,156,255,.5),rgba(169,156,255,.14));border-color:var(--mint)}
-.lb-t{font-size:.6rem;line-height:1.25;color:var(--text);font-weight:600;overflow-wrap:normal;word-break:normal;hyphens:manual}.lb-y{font-size:.7rem;color:var(--mint)}
+.lb-t{font-size:.66rem;line-height:1.25;color:var(--text);font-weight:600;overflow-wrap:normal;word-break:normal;hyphens:manual}.lb-y{font-size:.7rem;color:var(--mint)}
 .ladder figcaption{font:500 .7rem var(--mono);color:var(--dim);margin-top:12px;letter-spacing:.08em;text-transform:uppercase}
 .years{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .years li{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line)}
@@ -469,3 +479,9 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 .frame-in picture{display:block;line-height:0}.frame-in img{aspect-ratio:227/264;object-fit:cover}
 @media (max-width:979px){.nav-links .ic{width:18px;height:18px}.logo .brand-img{width:34px;height:34px}}
 @media (max-width:979px){.flow b small{display:none}.flowwrap.wide .flow b small{display:inline}.flow b{white-space:nowrap}}
+
+/* alignment pass: balanced headings, uniform hero-to-next-section spacing */
+h1,h2,h3{text-wrap:balance}
+.lede,.section-head p{text-wrap:pretty}
+.hero.split + section{padding-top:clamp(44px,5.5vw,80px)}
+.nb{white-space:nowrap}
