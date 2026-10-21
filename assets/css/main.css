@@ -569,4 +569,12 @@ h1,h2,h3{text-wrap:balance}
 /* case pages: three-field fact strip once Period is removed */
 .kv.k3{grid-template-columns:repeat(3,1fr)}
 @media (max-width:760px){.kv.k3{grid-template-columns:1fr}}
-.lib-sum h3:first-child{margin-top:0}
+
+/* library: badge row, title, text and action share row tracks across each grid row (subgrid); an all-empty badge row collapses to 0 */
+.lib-tags{display:flex;flex-wrap:wrap;gap:6px}.lib-tags:not(:empty){margin-bottom:10px}
+.lib-sum h3{margin-top:0}
+@supports (grid-template-rows:subgrid){
+  .lib-item{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0}
+  .lib-sum{display:grid;grid-row:1/span 4;grid-template-rows:subgrid;grid-template-columns:minmax(0,1fr);align-items:start;row-gap:0}
+  .lib-sum::after{align-self:end}
+}
