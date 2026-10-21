@@ -565,3 +565,8 @@ h1,h2,h3{text-wrap:balance}
 .sk-more{font:600 .95rem var(--sans);color:var(--mint);text-decoration:none;white-space:nowrap}.sk-more:hover,.sk-more:focus-visible{text-decoration:underline}
 @media (max-width:640px){.skills-head{display:block}.sk-act{margin-top:10px;flex-wrap:wrap}.sk-more{order:-1}}
 #skills{scroll-margin-top:84px}
+
+/* case pages: three-field fact strip once Period is removed */
+.kv.k3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.kv.k3{grid-template-columns:1fr}}
+.lib-sum h3:first-child{margin-top:0}
