@@ -117,7 +117,7 @@
   var m = document.querySelector('[data-map]'); if (!m) return;
   var NS = 'http://www.w3.org/2000/svg', svg = m.querySelector('.uni-links');
   var core = m.querySelector('[data-node="core"]'), groups = [].slice.call(m.querySelectorAll('.gcard'));
-  var btn = document.querySelector('.uni-pp'), reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  var btn = document.querySelector('#skills .uni-pp'), reduce = matchMedia('(prefers-reduced-motion: reduce)');
   var TRAVEL = 1500, HOLD = 2800, TRAIL = 6, links = [], light, trail = [], activeIdx = -1, activeGroupOn = false;
   var st = { user: false, hold: false, visible: true, elapsed: 0, last: 0, raf: 0 };
 
