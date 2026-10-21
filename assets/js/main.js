@@ -209,3 +209,15 @@
   if (reduce.addEventListener) reduce.addEventListener('change', onRM); else reduce.addListener(onRM);
   build(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(rebuild); kick();
 })();
+
+/* homepage hero flow: pause the light and node pulse offscreen, in hidden tabs and (via CSS) under reduced motion */
+(function () {
+  var f = document.querySelector('.hflow'); if (!f) return;
+  var vis = true, run = function () {
+    var on = vis && !document.hidden;
+    f.classList.toggle('paused', !on);
+    f.querySelectorAll('svg').forEach(function (s) { if (s.pauseAnimations) on ? s.unpauseAnimations() : s.pauseAnimations(); });
+  };
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { vis = es[0].isIntersecting; run(); }).observe(f);
+  document.addEventListener('visibilitychange', run);
+})();
