@@ -545,7 +545,7 @@ h1,h2,h3{text-wrap:balance}
 .fl-light{fill:var(--mint)}
 .hf-own{margin:20px 0 0;font:500 .95rem/1.4 var(--sans,Inter,system-ui,sans-serif);color:var(--text);border-top:1px solid var(--line2);padding-top:14px}
 @media (prefers-reduced-motion:no-preference){.hflow .nd circle{animation:hfnode 6.4s ease-out infinite}.hflow.paused .nd circle{animation-play-state:paused}}
-@keyframes hfnode{0%{stroke:var(--mint);stroke-width:2}9%{stroke:var(--mint);stroke-width:2}16%,100%{stroke:rgba(143,160,190,.45);stroke-width:1}}
+@keyframes hfnode{0%{stroke:var(--mint);stroke-width:2}5%{stroke:var(--mint);stroke-width:2}12%,100%{stroke:rgba(143,160,190,.45);stroke-width:1}}
 @media (prefers-reduced-motion:reduce){.fl-light{display:none}}
 @media (max-width:560px){
   .hflow{max-width:none}
@@ -554,3 +554,5 @@ h1,h2,h3{text-wrap:balance}
   .hflow li{flex-direction:row;align-items:baseline;gap:10px;padding:0 0 0 56px;height:48px;align-items:center}
   .hflow b{font-size:1.1rem}.hflow li span{font-size:.95rem}
 }
+.hf-pp{position:absolute;right:0;bottom:-3px;min-width:68px;padding:3px 12px;font-size:.78rem;text-align:center}
+@media (max-width:560px){.hf-pp{bottom:auto;top:0}}

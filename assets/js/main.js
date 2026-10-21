@@ -210,14 +210,22 @@
   build(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(rebuild); kick();
 })();
 
-/* homepage hero flow: pause the light and node pulse offscreen, in hidden tabs and (via CSS) under reduced motion */
+/* homepage hero flow: pause the light and node pulse offscreen, in hidden tabs, on user request; reduced motion is static via CSS and hides the control */
 (function () {
   var f = document.querySelector('.hflow'); if (!f) return;
-  var vis = true, run = function () {
-    var on = vis && !document.hidden;
+  var btn = f.querySelector('.hf-pp'), rm = matchMedia('(prefers-reduced-motion: reduce)'), vis = true, user = false;
+  var run = function () {
+    var on = vis && !document.hidden && !user && !rm.matches;
     f.classList.toggle('paused', !on);
     f.querySelectorAll('svg').forEach(function (s) { if (s.pauseAnimations) on ? s.unpauseAnimations() : s.pauseAnimations(); });
   };
+  var sync = function () { btn.hidden = rm.matches; run(); };
+  btn.addEventListener('click', function () {
+    user = !user; btn.textContent = user ? 'Play' : 'Pause';
+    btn.setAttribute('aria-label', user ? 'Play animation' : 'Pause animation'); btn.setAttribute('aria-pressed', user); run();
+  });
   if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { vis = es[0].isIntersecting; run(); }).observe(f);
   document.addEventListener('visibilitychange', run);
+  if (rm.addEventListener) rm.addEventListener('change', sync); else rm.addListener(sync);
+  sync();
 })();
