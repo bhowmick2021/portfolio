@@ -199,7 +199,7 @@
   addEventListener('scroll', function () { if (cur && document.activeElement === cur) showTip(cur); else hideTip(); }, { passive: true });
 
   /* pause / resume, offscreen and hidden-tab pausing, reduced motion */
-  function label() { btn.textContent = st.user ? 'Play animation' : 'Pause animation'; btn.setAttribute('aria-pressed', st.user); }
+  function label() { btn.textContent = st.user ? 'Play animation' : 'Pause animation'; btn.setAttribute('aria-label', btn.textContent + ', skills map'); btn.setAttribute('aria-pressed', st.user); }
   if (btn) { btn.hidden = reduce.matches; btn.addEventListener('click', function () { st.user = !st.user; label(); if (st.user) hideLight(); else kick(); }); }
   if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { st.visible = es[0].isIntersecting; if (!st.visible) hideLight(); kick(); }).observe(m);
   document.addEventListener('visibilitychange', kick);
@@ -222,7 +222,7 @@
   var sync = function () { btn.hidden = rm.matches; run(); };
   btn.addEventListener('click', function () {
     user = !user; btn.textContent = user ? 'Play' : 'Pause';
-    btn.setAttribute('aria-label', user ? 'Play animation' : 'Pause animation'); btn.setAttribute('aria-pressed', user); run();
+    btn.setAttribute('aria-label', (user ? 'Play' : 'Pause') + ' animation, workflow'); btn.setAttribute('aria-pressed', user); run();
   });
   if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { vis = es[0].isIntersecting; run(); }).observe(f);
   document.addEventListener('visibilitychange', run);
